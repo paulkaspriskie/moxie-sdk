@@ -10,6 +10,12 @@ module.exports = {
       {
         test: /\.(js|jsx|ts)$/,
         exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       },
       {
         test: /\.(png|jpe?g|svg|gif)$/i,
