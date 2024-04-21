@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/paulkaspriskie/front-end-sdk/issues"
   },
-  "homepage": "https://github.com/paulkaspriskie/front-end-sdk#readme"
+  "homepage": "https://github.com/paulkaspriskie/front-end-sdk#readme",
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-dev-server": "^5.0.4"
+  }
 }
