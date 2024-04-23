@@ -1,1 +1,1 @@
-# front-end-sdk
+# Moxie-SDK
