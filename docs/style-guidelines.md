@@ -1,6 +1,29 @@
 # Style Guidelines
 
 ## CSS
+### Basic Formatting Rules:
+```css
+    .selector-one,
+    .selector-two,
+    .selector-three {
+        position: absolute;
+        display: block;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+```
+- Use one selector per line in multi-selector rulesets.
+- Include a single space before the opening bracket of a code block.
+- Use one level of indentation for each property declaration.
+- Use a single space after the colon of a property declararion.
+- Use lowercase and shorthand hex values ex.`#fff`
+- Separate each code block with a blank line.
+---
+
 ### Property Ordering:
 ```css
     .example {
