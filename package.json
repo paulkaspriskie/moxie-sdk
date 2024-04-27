@@ -5,6 +5,7 @@
   "main": "src/js/index.js",
   "scripts": {
     "build": "lib/util/build.sh",
+    "create-app": "node lib/util/util-app-create.js",
     "start": "node ./lib/util/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
