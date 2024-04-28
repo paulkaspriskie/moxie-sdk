@@ -9,6 +9,11 @@
     "start": "node ./lib/util/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": [
+    "> 0.5%",
+    "not dead",
+    "last 3 versions"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paulkaspriskie/front-end-sdk.git"
