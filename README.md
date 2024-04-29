@@ -21,17 +21,22 @@ npm install
 <br/>
 
 ## Usage
-#### Compiles development build and runs dev server
+#### Compile development build and run dev server
 ```shell
 npm start [app-name]
 ```
-- If no app is specified default app is compiled. (moxie-wiki)
 
-#### Compiles production build
+#### Compile production build
 ```shell
 npm run build [app-name]
 ```
--  If no app is specified default app is compiled. (moxie-wiki)
+> **NOTE!:** If no app name is specified the first application within ```apps/``` will be compiled as default.
+
+#### Create new application
+> Dynamically generates directory and necessary entry point files within ```apps/```.
+```shell
+npm run create-app [app-name]
+```
 
 <br/>
 
