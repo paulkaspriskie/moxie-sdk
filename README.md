@@ -5,12 +5,12 @@ A micro front-end architecture to rapidly develop and deploy react apps.
 <br/>
 
 ## Installation
-#### Clone this repository
+### Clone this repository
 ```shell
 git clone https://github.com/paulkaspriskie/moxie-sdk.git
 ```
 
-#### Install node dependencies
+### Install node dependencies
 ```shell
 npm install
 ```
@@ -20,19 +20,24 @@ npm install
 
 <br/>
 
-## Usage
-#### Compile development build and run dev server
+## Basic Usage
+### Compile development build and run dev server
+> Uses webpack.dev.js to build development configuration and to start dev server. <br/><br/> **NOTE!:** If no app name is specified the first application within ```apps/``` will be compiled as default.
 ```shell
 npm start [app-name]
 ```
 
-#### Compile production build
+<br/>
+
+### Compile production build
+> Uses webpack.prod.js to build production configuration. <br/><br/> **NOTE!:** If no app name is specified the first application within ```apps/``` will be compiled as default.
 ```shell
 npm run build [app-name]
 ```
-> **NOTE!:** If no app name is specified the first application within ```apps/``` will be compiled as default.
 
-#### Create new application
+<br/>
+
+### Create new application
 > Dynamically generates directory and necessary entry point files within ```apps/```.
 ```shell
 npm run create-app [app-name]
@@ -72,3 +77,6 @@ npm run create-app [app-name]
 ├── package-lock.json
 └── README.md
 ```
+>- ```apps/``` - Location of all precompiled app source code. 
+>- ```docs/``` - Contains general documentation on code formatting and project usage.
+>- ```lib/``` - Common configurations, components, utilities and functions. 
