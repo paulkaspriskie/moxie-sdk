@@ -1,6 +1,10 @@
 # Moxie-SDK
 
 A micro front-end architecture to rapidly develop and deploy react apps.
+- [Installation](#installation)
+- [Basic Usage](#basic-usage)
+- [File Structure](#file-structure-overview)
+- [Style Guides](docs/style-guidelines.md)
 
 <br/>
 
@@ -9,11 +13,13 @@ A micro front-end architecture to rapidly develop and deploy react apps.
 ```shell
 git clone https://github.com/paulkaspriskie/moxie-sdk.git
 ```
+<br/>
 
 ### Install node dependencies
 ```shell
 npm install
 ```
+
 <br/>
 
 ---
