@@ -22,7 +22,13 @@
 - Use a single space after the colon of a property declararion.
 - Use lowercase and shorthand hex values ex.`#fff`
 - Separate each code block with a blank line.
+
+
+<br/>
+
 ---
+
+<br/>
 
 ### Property Ordering:
 ```css
@@ -60,4 +66,16 @@
         transition: margin-right 4s ease-in-out;
     }
 ```
+
+<br/>
+
+---
+
+<br/>
+
+### Naming Convention
+Moxie CSS uses [BEM naming conventions](https://getbem.com/naming/) with the addition of a prefix.
+
+***Syntax:*** ``` <prefix>-<component-name>[__<element>][--<modifier>] ```
+
 
