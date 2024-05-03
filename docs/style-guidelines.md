@@ -1,4 +1,6 @@
 # Style Guidelines
+- [CSS/SCSS Guidelines](#css)
+- [Javascript Guidelines](#javascript)
 
 ## CSS
 ### Basic Formatting Rules:
@@ -78,4 +80,90 @@ Moxie CSS uses [BEM naming conventions](https://getbem.com/naming/) with the add
 
 ***Syntax:*** ``` <prefix>-<component-name>[__<element>][--<modifier>] ```
 
+
+<br/>
+
+---
+
+<br/>
+
+## Javascript
+### Comment Blocks
+Moxie uses [JSDoc](https://jsdoc.app/) stye comment blocks.
+
+### Files
+Document the top of js files using the following style:
+```js
+/** 
+ *  @fileOverview Write what's going on in the file here.
+ *
+ *  @author       Philip J. Fry
+ *  @author       Doug Funnie
+ *
+ *  @requires     NPM:npm_module_1
+ *  @requires     BOWER:bower_module_1
+ *  @requires     EXTERNAL:@link{http://url.com module_name}
+ *  @requires     path/to/file:your_module_2
+ */
+```
+
+<br/>
+
+---
+
+<br/>
+
+### Functions
+Document javascript functions as follows:
+```js
+/**
+ * Takes 2 numbers and returns their sum.
+ * @param   {number} a     the first number
+ * @param   {number} b     the second number
+ * @param   {number} [c=0] the optional third number
+ *
+ * @returns {number} the sum of a and b
+ */
+function addNumbers(a, b, c) {
+  if (typeof c === "undefined") {
+    c = 0;
+  }
+  return a + b + c;
+}
+```
+
+<br/>
+
+---
+
+<br/>
+
+### React Components
+```js
+import React from 'react';
+import "./Button.css"
+
+/**
+ * A simple button component.
+ *
+ * @component
+ * @param {Object} props - The component accepts text and onClick as props
+ * @param {string} props.text - The text to be display on the button
+ * @param {function} props.onClick - The click event handler.
+ * @returns {JSX.Element} The rendered button component.
+ *
+ * @example
+ * // Render a button with the text "Click Me"
+ * <Button text="Click Me" onClick={() => console.log('Button clicked!')} />
+ */
+function Button({ text, onClick }) {
+  return (
+    <button className='myButton' onClick={onClick}>
+      {text}
+    </button>
+  );
+}
+
+export default Button;
+```
 
