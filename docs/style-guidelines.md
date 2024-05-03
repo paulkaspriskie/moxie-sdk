@@ -80,6 +80,44 @@ Moxie CSS uses [BEM naming conventions](https://getbem.com/naming/) with the add
 
 ***Syntax:*** ``` <prefix>-<component-name>[__<element>][--<modifier>] ```
 
+#### Application Container
+```css
+.app-portfolio-site__container {
+    // do stuff.
+}
+```
+
+#### Component
+```css
+.component-form-item {
+    // do stuff.
+}
+```
+
+#### Component with element
+```css
+.component-form-item__head {
+    // do stuff.
+}
+```
+
+#### Component with Modifier
+```css
+.component-form-item--inline {
+    // do stuff.
+}
+```
+
+#### Component with state
+```css
+.component-drawer--is-open {}
+
+.component-drawer--is-closed {}
+
+.component-drawer--is-disabled {}
+
+```
+
 
 <br/>
 
@@ -91,7 +129,7 @@ Moxie CSS uses [BEM naming conventions](https://getbem.com/naming/) with the add
 ### Comment Blocks
 Moxie uses [JSDoc](https://jsdoc.app/) stye comment blocks.
 
-### Files
+#### Files
 Document the top of js files using the following style:
 ```js
 /** 
@@ -113,7 +151,7 @@ Document the top of js files using the following style:
 
 <br/>
 
-### Functions
+#### Functions
 Document javascript functions as follows:
 ```js
 /**
@@ -138,7 +176,7 @@ function addNumbers(a, b, c) {
 
 <br/>
 
-### React Components
+#### React Components
 ```js
 import React from 'react';
 import "./Button.css"
