@@ -14,4 +14,4 @@ else
   CLI_INPUT=$1
 fi
 
-NODE_ENV=production node_modules/.bin/webpack --config ./lib/config/webpack.config.js --entry ./apps/$CLI_INPUT/src/js/index.js
+NODE_ENV=production node_modules/.bin/webpack --config ./lib/config/webpack.prod.js --entry ./apps/$CLI_INPUT/src/js/index.js
