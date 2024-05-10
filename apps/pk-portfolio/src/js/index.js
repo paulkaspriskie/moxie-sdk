@@ -31,8 +31,8 @@ const App = () => {
 			<nav>
 				<ul>
 					<li><img src={pkLogo} alt="React Logo" /><Link to="/">Paul Kaspriskie</Link></li>
-					<li><Link to="/two">two</Link></li>
-					<li><Link to="/three">three</Link></li>
+					<li><Link to="/two">Two</Link></li>
+					<li><Link to="/three">Three</Link></li>
 				</ul>
 			</nav>
 			<main>
