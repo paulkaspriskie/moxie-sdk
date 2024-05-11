@@ -86,6 +86,35 @@ body {
 
   main {
     width: 75%;
-    padding: 0 2rem;
+
+    & > div > div {
+      border-bottom: 1px solid #666;
+    }
+
+    & div > div > h1 {
+      margin: 1.5rem 0;
+      font-size: 18px;
+      text-align: center;
+    }
+
   }
+}
+
+
+.page-enter {
+  transform: translateX(80%);
+}
+
+.page-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.page-exit {
+  transform: translateX(0);
+}
+
+.page-exit-active {
+  transform: translateX(-80%);
+  transition: transform 300ms ease-in-out;
 }
