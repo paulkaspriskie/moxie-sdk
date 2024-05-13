@@ -41,6 +41,7 @@ body {
         a {
           width: 100%;
           padding-left: 1rem;
+          font-size: 24px;
           color: #E65100;
         }
 
@@ -100,21 +101,30 @@ body {
   }
 }
 
+// .page {
+//   position: absolute;
+//   left: 15px;
+//   right: 15px;
 
-.page-enter {
-  transform: translateX(80%);
-}
+//   transition: 500ms ease-in-out;
+// }
 
-.page-enter-active {
-  transform: translateX(0);
-  transition: transform 300ms ease-in-out;
-}
+// .page-enter {
+//   transform: translateX(+4000px);
+//   transition: 500ms ease-in-out;
+// }
 
-.page-exit {
-  transform: translateX(0);
-}
+// .page-enter-active {
+//   transform: translateX(0px);
+//   transition: 500ms ease-in-out;
+// }
 
-.page-exit-active {
-  transform: translateX(-80%);
-  transition: transform 300ms ease-in-out;
-}
+// .page-exit {
+//   transform: translateX(0px);
+//   transition: 500ms ease-in-out;
+// }
+
+// .page-exit-active {
+//   transform: translateX(+4000px);
+//   transition: 500ms ease-in-out;
+// }
