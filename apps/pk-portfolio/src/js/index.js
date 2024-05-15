@@ -14,25 +14,25 @@ const Home = () => {
 
 const Skills = () => {
   return (
-    <>
+    <div>
       <h1>Skills</h1>
-    </>
+    </div>
   )
 }
 
 const Projects = () => {
   return (
-    <>
+    <div>
       <h1>Projects</h1>
-    </>
+    </div>
   )
 }
 
 const Contact = () => {
   return (
-    <>
+    <div>
       <h1>Contact</h1>
-    </>
+    </div>
   );
 }
 
@@ -58,7 +58,7 @@ const router = createBrowserRouter([
 function App() {
   const location = useLocation();
   const currentOutlet = useOutlet();
- 
+
   const { nodeRef } = routes.find((route) => route.path === location.pathname) ?? {};
 
   return (
@@ -67,7 +67,7 @@ function App() {
         <ul>
           {routes.map((route, index) => (
             <li key={route.path}>
-              {index === 0 ? <img src={pkLogo} alt="React Logo" /> : null}
+              {index === 0 ? <img src={pkLogo} /> : null}
               <NavLink
                 to={route.path}
                 className={({ isActive }) => (isActive ? 'active' : undefined)}
@@ -79,15 +79,15 @@ function App() {
         </ul>
       </nav>
       <main>
-        <TransitionGroup>
+        <TransitionGroup component={null}>
           <CSSTransition
             key={location.pathname}
             nodeRef={nodeRef}
-            timeout={0}
+            timeout={{ enter: 1000, exit: 1000 }}
             classNames="page"
             unmountOnExit>
             {(state) => (
-              <div ref={nodeRef} className="page">
+              <div ref={nodeRef}>
                 {currentOutlet}
               </div>
             )}
