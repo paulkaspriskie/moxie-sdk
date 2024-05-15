@@ -87,7 +87,7 @@ function App() {
             classNames="page"
             unmountOnExit>
             {(state) => (
-              <div ref={nodeRef}>
+              <div ref={nodeRef} className="page">
                 {currentOutlet}
               </div>
             )}
