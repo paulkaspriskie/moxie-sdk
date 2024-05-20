@@ -1,0 +1,41 @@
+.app-pk-portfolio__container > main {
+
+  position: relative;
+  width: 75%;
+
+  & > div > div {
+    border-bottom: 1px solid #666;
+  }
+
+  & div > div > h1 {
+    margin: 1.5rem 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+}
+
+
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.page-enter {
+  transform: translateX(100%);
+}
+
+.page-enter-active {
+  transform: translateX(0%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.page-exit {
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  transform: translateX(-100%);
+  transition: transform 1000ms ease-in-out;
+}
