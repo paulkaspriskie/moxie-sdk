@@ -1,7 +1,7 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
+import pkLogo from '../../assets/pk-crane.svg';
 
-
-const Nav = () => {
+const Nav = ({routes}) => {
   return (
     <>
       <nav>

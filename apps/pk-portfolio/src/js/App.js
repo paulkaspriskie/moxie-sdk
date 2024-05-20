@@ -1,7 +1,7 @@
-import { NavLink, useLocation, useOutlet } from 'react-router-dom';
+import { useLocation, useOutlet } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { ROUTES, ROUTER } from './router/Router.js';
-import pkLogo from '../assets/pk-crane.svg';
+import { ROUTES } from './router/Router.js';
+import Nav from './components/Nav.js';
 
 
 const App = () => {
@@ -12,21 +12,7 @@ const App = () => {
 
   return (
     <div className="app-pk-portfolio__container">
-      <nav>
-        <ul>
-          {ROUTES.map((route, index) => (
-            <li key={route.path}>
-              {index === 0 ? <img src={pkLogo} /> : null}
-              <NavLink
-                to={route.path}
-                className={({ isActive }) => (isActive ? 'active' : undefined)}
-                end>
-                {route.name}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <Nav routes={ROUTES} />
       <main>
         <TransitionGroup component={null}>
           <CSSTransition
