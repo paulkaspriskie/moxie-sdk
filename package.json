@@ -6,6 +6,7 @@
   "scripts": {
     "build": "lib/util/build.sh",
     "create-app": "node lib/util/util-architecture-create.js",
+    "create-component": "node lib/util/util-architecture-create.js",
     "start": "node ./lib/util/util-dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
