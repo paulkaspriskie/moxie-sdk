@@ -1,0 +1,10 @@
+{
+  "pathData": [
+    {
+      "jsDirPath": "src/js",
+      "scssDirPath": "src/scss",
+      "jsFilePath": "src/js/index.js",
+      "scssFilePath": "src/scss/index.scss"
+    }
+  ]
+}
