@@ -1,6 +1,8 @@
 # Moxie-SDK
 
 A micro front-end architecture to rapidly develop and deploy react apps.
+
+## Contents
 - [Installation](#installation)
 - [Basic Usage](#basic-usage)
 - [File Structure](#file-structure-overview)
@@ -47,6 +49,14 @@ npm run build [app-name]
 > Dynamically generates directory and necessary entry point files within ```apps/```.
 ```shell
 npm run create-app [app-name]
+```
+
+<br/>
+
+### Create new component
+> Dynamically generates react component architecture and corresponding scss file in specified app. A prompt will ask for valid component name when command is initially run.
+```shell
+npm run create-component [component-name]
 ```
 
 <br/>
