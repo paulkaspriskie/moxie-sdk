@@ -4,7 +4,9 @@
       "jsDirPath": "src/js",
       "scssDirPath": "src/scss",
       "jsFilePath": "src/js/index.js",
-      "scssFilePath": "src/scss/index.scss"
+      "scssFilePath": "src/scss/index.scss",
+      "jsComponentDir": "src/js/components",
+      "scssComponentDir": "src/scss/components"
     }
   ]
 }
