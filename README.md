@@ -54,7 +54,7 @@ npm run create-app [app-name]
 <br/>
 
 ### Create new component
-> Dynamically generates react component architecture and corresponding scss file in specified app. A prompt will ask for valid component name when command is initially run.
+> Dynamically generates react component architecture and corresponding scss file in specified app. A prompt will ask for valid app name when process initially runs.
 ```shell
 npm run create-component [component-name]
 ```
@@ -93,6 +93,6 @@ npm run create-component [component-name]
 ├── package-lock.json
 └── README.md
 ```
->- ```apps/``` - Location of all precompiled app source code. 
+>- ```apps/``` - Location of all precompiled app source code.
 >- ```docs/``` - Contains general documentation on code formatting and project usage.
->- ```lib/``` - Common configurations, components, utilities and functions. 
+>- ```lib/``` - Common configurations, components, utilities and functions.
