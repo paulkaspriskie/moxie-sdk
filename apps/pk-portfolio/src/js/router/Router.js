@@ -10,7 +10,7 @@ import Skills from '../pages/Skills.js';
 export const ROUTES = [
   { path: '/', name: 'Paul Kaspriskie', element: <Home />, nodeRef: createRef() },
   { path: '/skills', name: 'Skills', element: <Skills />, nodeRef: createRef() },
-  { path: '/projects', name: 'projects', element: <Projects />, nodeRef: createRef() },
+  { path: '/projects', name: 'Projects', element: <Projects />, nodeRef: createRef() },
   { path: '/contact', name: 'Contact', element: <Contact />, nodeRef: createRef() },
 ];
 
