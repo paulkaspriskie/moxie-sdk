@@ -23,9 +23,9 @@ const Nav = ({routes}) => {
           ))}
         </ul>
           <ul>
-            <li><img src={gitIcon}/></li>
-            <li><img src={stackIcon}/></li>
-            <li><img src={linkedIcon}/></li>
+            <li><a href={'https://github.com/paulkaspriskie'} target="_blank"><img src={gitIcon}/></a></li>
+            <li><a href={'https://stackoverflow.com/users/4530176/paul-kaspriskie'} target="_blank"><img src={stackIcon}/></a></li>
+            <li><a href={'https://www.linkedin.com/in/paul-kaspriskie-08840095/'} target="_blank"><img src={linkedIcon}/></a></li>
           </ul>
       </nav>
     </>
