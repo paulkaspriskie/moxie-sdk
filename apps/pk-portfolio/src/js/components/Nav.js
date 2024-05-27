@@ -22,13 +22,11 @@ const Nav = ({routes}) => {
             </li>
           ))}
         </ul>
-        <div>
           <ul>
             <li><img src={gitIcon}/></li>
             <li><img src={stackIcon}/></li>
             <li><img src={linkedIcon}/></li>
           </ul>
-        </div>
       </nav>
     </>
   )
