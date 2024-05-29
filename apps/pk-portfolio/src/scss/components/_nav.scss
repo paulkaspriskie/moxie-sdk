@@ -1,12 +1,14 @@
+@use "../abstracts/variables";
+
  .app-pk-portfolio__container > nav {
     z-index: 1;
-    border-right: 3px solid #E65100;
+    border-right: 3px solid variables.$color-brand-primary;
     width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: variables.$color-foreground-white;
 
     & > ul {
       margin: 0;
@@ -34,12 +36,12 @@
      a {
        padding-left: 1rem;
        width: 100%;
-       color: #E65100;
+       color: variables.$color-brand-primary;
        font-size: 24px;
      }
 
      img {
-       border: 1.5px solid #E65100;
+       border: 1.5px solid variables.$color-brand-primary;
        border-radius: 10px;
        padding: 0.6rem;
        width: 50px;
@@ -47,17 +49,17 @@
    }
 
    & > li:nth-child(n+2) {
-     border-bottom: 1px solid #E65100;
-     a.active { color: #E65100; }
+     border-bottom: 1px solid variables.$color-brand-primary;
+     a.active { color: variables.$color-brand-primary; }
 
      &:hover {
        transition: all 0.5s ease;
-       background: #E65100;
+       background: variables.$color-brand-primary;
 
        a {
          transition: all 0.5s ease;
          padding-left: 0.6rem;
-         color: #FFF;
+         color: variables.$color-foreground-white;
        }
      }
    }
@@ -77,8 +79,8 @@
       & > a > img { width: 30px; }
 
       &:nth-child(2) {
-        border-left: 1px solid orange;
-        border-right: 1px solid orange;
+        border-left: 1px solid variables.$color-brand-primary;
+        border-right: 1px solid variables.$color-brand-primary;
       }
     }
   }
