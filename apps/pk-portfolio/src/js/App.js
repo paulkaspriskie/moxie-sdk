@@ -1,6 +1,6 @@
 import { useLocation, useOutlet } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { ROUTES } from './router/Router.js';
+import { ROUTES, ROUTER } from './router/Router.js';
 import Nav from './components/Nav.js';
 
 
