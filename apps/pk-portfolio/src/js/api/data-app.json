@@ -2,15 +2,18 @@
   "navSocial": [
     {
       "name": "github",
-      "imgPath": "../../assets/icons/github-logo.svg"
+      "imgPath": "../../assets/icons/github-logo.svg",
+      "url": "https://github.com/paulkaspriskie"
     },
     {
       "name": "linked-in",
-      "imgPath": "../../assets/icons/linkedIn-icon.svg"
+      "imgPath": "../../assets/icons/linkedIn-icon.svg",
+      "url": "https://www.linkedin.com/in/paul-kaspriskie-08840095/"
     },
     {
       "name": "stack-overflow",
-      "imgPath": "../../assets/icons/stack-overflow-icon.svg"
+      "imgPath": "../../assets/icons/stack-overflow-icon.svg",
+      "url": "https://stackoverflow.com/users/4530176/paul-kaspriskie"
     }
   ]
 }
