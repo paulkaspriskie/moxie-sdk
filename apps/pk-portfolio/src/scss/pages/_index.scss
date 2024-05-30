@@ -1,7 +1,7 @@
 .app-pk-portfolio__container > main {
-
   position: relative;
   width: 75%;
+  overflow: scroll;
 
   & > div > div {
     border-bottom: 1px solid #666;
