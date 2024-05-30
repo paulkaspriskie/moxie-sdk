@@ -1,0 +1,16 @@
+{
+  "navSocial": [
+    {
+      "name": "github",
+      "imgPath": "../../assets/icons/github-logo.svg"
+    },
+    {
+      "name": "linked-in",
+      "imgPath": "../../assets/icons/linkedIn-icon.svg"
+    },
+    {
+      "name": "stack-overflow",
+      "imgPath": "../../assets/icons/stack-overflow-icon.svg"
+    }
+  ]
+}
