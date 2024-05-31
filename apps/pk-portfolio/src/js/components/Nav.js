@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import appData from '../api/data-app.json';
 import pkLogo from '../../assets/pk-crane.svg';
 import gitIcon from '../../assets/icons/github-logo.svg';
 import stackIcon from '../../assets/icons/stack-overflow-icon.svg';
@@ -22,11 +23,13 @@ const Nav = ({routes}) => {
             </li>
           ))}
         </ul>
-          <ul>
-            <li><a href={'https://github.com/paulkaspriskie'} target="_blank"><img src={gitIcon}/></a></li>
-            <li><a href={'https://stackoverflow.com/users/4530176/paul-kaspriskie'} target="_blank"><img src={stackIcon}/></a></li>
-            <li><a href={'https://www.linkedin.com/in/paul-kaspriskie-08840095/'} target="_blank"><img src={linkedIcon}/></a></li>
-          </ul>
+        <ul>
+          {
+            appData.navSocial.map((item, i) => {
+              return <li key={i}><a href={item.url} target="_blank"><img src={require(`../../assets/icons/${item.fileName}`)} /></a></li>
+            })
+          }
+        </ul>
       </nav>
     </>
   )
