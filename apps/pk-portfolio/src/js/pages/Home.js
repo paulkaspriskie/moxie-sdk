@@ -4,23 +4,10 @@ import { fetchData } from '../actions/actions.js';
 
 
 const Home = () => {
-
-  const dispatch = useDispatch();
-  const { data, loading, error } = useSelector((state) => state.data);
-
-  useEffect(() => {
-
-    dispatch(fetchData());
-
-  }, [dispatch]);
-
   return (
     <>
-      <ul>
-        {
-          data.map((item, i) => <li key={i}>{item.title}</li>)
-        }
-      </ul>
+      <div className="layout-page__home">
+      </div>
     </>
   )
 }
