@@ -1,7 +1,7 @@
 
 const Projects = () => {
   return (
-    <div>
+    <div className="layout-page__projects">
       <h1>Projects</h1>
     </div>
   )
