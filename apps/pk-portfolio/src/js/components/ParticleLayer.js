@@ -25,6 +25,7 @@ const ParticleLayer = () => {
   const options = useMemo(
     () => ({
       fpsLimit: 120,
+      fullScreen: { enable: false },
       particles: {
         color: {
           value: "#ffffff",
