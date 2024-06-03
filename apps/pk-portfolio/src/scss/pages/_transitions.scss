@@ -1,0 +1,24 @@
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.page-enter {
+  transform: translateX(100%);
+}
+
+.page-enter-active {
+  transform: translateX(0%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.page-exit {
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  transform: translateX(-100%);
+  transition: transform 1000ms ease-in-out;
+}
