@@ -9,7 +9,7 @@ const Home = () => {
       <ParticleLayer />
       <div className="layout-page__home">
         <div><img src={require("../../assets/imgs/pk-profile.png")}/></div>
-        <h1>It's me the boy!</h1>
+        <h1>Hello there, I'm Paul Kaspriskie.</h1>
         <p>Roquefort fromage frais macaroni cheese. Taleggio swiss squirty cheese smelly cheese smelly cheese pecorino jarlsberg cheese triangles. Babybel pecorino cheesy grin bavarian bergkase babybel boursin cheese slices roquefort. Danish fontina cheese and wine rubber cheese.</p>
       </div>
     </>

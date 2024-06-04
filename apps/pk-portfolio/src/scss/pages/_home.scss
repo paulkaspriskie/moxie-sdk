@@ -18,13 +18,14 @@
     border-radius: 15%;
   }
 
-  & > h1 { font-size: 24px !important; }
+  & > h1 { font-size: 32px !important; }
 
   & > p {
     margin: 0;
     width: 60%;
     text-align: center;
     font-size: 14pt;
+    line-height: 1.8rem;
   }
   //background: linear-gradient(125deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 100%);
 }
