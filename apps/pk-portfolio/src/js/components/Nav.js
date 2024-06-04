@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import appData from '../api/data-app.json';
-import pkLogo from '../../assets/pk-crane.svg';
 import gitIcon from '../../assets/icons/github-logo.svg';
 import stackIcon from '../../assets/icons/stack-overflow-icon.svg';
 import linkedIcon from '../../assets/icons/linkedIn-icon.svg';
@@ -13,7 +12,7 @@ const Nav = ({routes}) => {
         <ul>
           {routes.map((route, index) => (
             <li key={route.path}>
-              {index === 0 ? <img src={pkLogo} /> : null}
+              {index === 0 ? <img src={require('../../assets/icons/pk-crane.svg')} /> : null}
               <NavLink
                 to={route.path}
                 className={({ isActive }) => (isActive ? 'active' : undefined)}
