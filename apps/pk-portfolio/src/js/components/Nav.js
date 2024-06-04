@@ -1,8 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import appData from '../api/data-app.json';
-import gitIcon from '../../assets/icons/github-logo.svg';
-import stackIcon from '../../assets/icons/stack-overflow-icon.svg';
-import linkedIcon from '../../assets/icons/linkedIn-icon.svg';
 
 
 const Nav = ({routes}) => {
