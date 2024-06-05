@@ -9,11 +9,14 @@ const Nav = ({routes}) => {
         <ul>
           {routes.map((route, index) => (
             <li key={route.path}>
-              {index === 0 ? <img src={require('../../assets/icons/pk-crane.svg')} /> : null}
               <NavLink
                 to={route.path}
                 className={({ isActive }) => (isActive ? 'active' : undefined)}
                 end>
+                {
+                  index === 0 ? <img src={require('../../assets/icons/pk-crane.svg')} /> :
+                  <img src={require(`../../assets/icons/${route.name.toLowerCase()}-icon.svg`)} />
+                }
                 {route.name}
               </NavLink>
             </li>

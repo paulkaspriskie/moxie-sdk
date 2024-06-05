@@ -20,28 +20,30 @@
 
 
  .app-pk-portfolio__container > nav > ul:first-of-type {
-   & > li  > a {
+   & > li > a {
      padding: 1.5rem 0;
-     display: block;
+     display: flex;
+     align-items: center;
      font-size: 18px;
      text-decoration: none;
+
+     & > img { margin-right: 1rem; }
+
    }
 
    & > li:first-of-type {
-     display: flex;
      margin: 1rem 0;
-     align-items: center;
 
      a {
-       padding-left: 1rem;
        width: 100%;
        color: variables.$color-brand-primary;
        font-size: 24px;
      }
 
-     img {
+     & > a > img {
        border: 1.5px solid variables.$color-brand-primary;
        border-radius: 10px;
+       margin-right: 1rem;
        padding: 0.6rem;
        width: 50px;
      }
@@ -50,6 +52,8 @@
    & > li:nth-child(n+2) {
      border-bottom: 1px solid variables.$color-brand-primary;
      a.active { color: variables.$color-brand-primary; }
+
+     & > a > img { width: 25px }
 
      &:hover {
        transition: all 0.5s ease;
