@@ -38,6 +38,16 @@
        width: 100%;
        color: variables.$color-brand-primary;
        font-size: 24px;
+
+       & > h3 {
+         font-size: 24px;
+
+         & > span {
+           display: block;
+           font-size: 16px;
+           font-weight: normal;
+         }
+       }
      }
 
      & > a > img {

@@ -17,7 +17,9 @@ const SideNavigation = ({routes}) => {
                   index === 0 ? <img src={require('../../assets/icons/pk-crane.svg')} /> :
                   <img src={require(`../../assets/icons/${route.name.toLowerCase()}-icon.svg`)} />
                 }
-                {route.name}
+                {
+                  index === 0 ? <h3>{route.name}<span>Frontend / UI Developer</span></h3> : route.name
+                }
               </NavLink>
             </li>
           ))}
