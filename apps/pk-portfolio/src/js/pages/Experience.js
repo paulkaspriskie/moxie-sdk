@@ -1,8 +1,10 @@
+import Hero from '../components/Hero.js';
+
 
 const Experience = () => {
   return (
     <div className="layout-page__projects">
-      <h1>Experience</h1>
+      <Hero />
     </div>
   )
 }
