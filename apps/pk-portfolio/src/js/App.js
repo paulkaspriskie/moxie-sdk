@@ -1,7 +1,7 @@
 import { useLocation, useOutlet } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { ROUTES, ROUTER } from './router/Router.js';
-import Nav from './components/Nav.js';
+import SideNavigation from './components/SideNavigation.js';
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="app-pk-portfolio__container">
-      <Nav routes={ROUTES} />
+      <SideNavigation routes={ROUTES} />
       <main>
         <TransitionGroup component={null}>
           <CSSTransition

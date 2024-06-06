@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import appData from '../api/data-app.json';
 
 
-const Nav = ({routes}) => {
+const SideNavigation = ({routes}) => {
   return (
     <>
       <nav>
@@ -35,4 +35,4 @@ const Nav = ({routes}) => {
 }
 
 
-export default Nav;
+export default SideNavigation;
