@@ -52,6 +52,10 @@
            font-weight: normal;
          }
        }
+
+       &:hover {
+         background: darken(variables.$color-foreground-white, 5%);
+       }
      }
 
      & > a > img {
@@ -64,7 +68,7 @@
    }
 
    & > li:nth-child(n+2) {
-     border-bottom: 1px solid variables.$color-brand-primary;
+     border-bottom: 1px dashed variables.$color-brand-primary;
 
      & > a {
        border-left: 8px solid white;
@@ -90,7 +94,7 @@
        background: darken(variables.$color-foreground-white, 5%);
 
        a {
-         border-left-color: darken(variables.$color-foreground-white, 3%);
+         border-left-color: darken(variables.$color-foreground-white, 5%);
          transition: all 0.5s ease;
        }
      }
