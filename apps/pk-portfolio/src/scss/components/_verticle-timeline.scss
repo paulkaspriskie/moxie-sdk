@@ -1,3 +1,13 @@
-.component-vertical-timeline__container {
+.component-verticle-timeline__container {
+
+  & > ul {
+    border-left: 1px solid #282828;
+    list-style: none;
+
+    & > li {
+      padding: 1.5rem 0;
+
+    }
+  }
 
 }
