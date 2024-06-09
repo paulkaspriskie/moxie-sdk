@@ -6,6 +6,7 @@ const VerticleTimeline = () => {
 		<div className="component-verticle-timeline__container">
 			<ul>
 				<li>
+					<div></div>
 					<time>September 2021 - Present</time>
 					<h3>UI Developer</h3>
 					<span>Barclays</span>
