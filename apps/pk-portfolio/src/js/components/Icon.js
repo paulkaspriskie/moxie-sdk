@@ -1,7 +1,23 @@
-import React from 'react';
-    
-const Icon = () => {
-	return <div className="component-icon__container"><h1>icon</h1></div>
+import React, { useEffect, useState } from 'react';
+
+
+const Icon = ({name}) => {
+
+  const [icon, setIcon] = useState('');
+
+  useEffect(() => {
+
+    (async () => {
+      let importIcon = await import(`../../assets/icons/${name}.svg`);
+      setIcon(importIcon.default);
+    })();
+
+  }, [name]);
+
+  return (
+    <>{icon}</>
+  );
+
 }
-    
+
 export default Icon;
