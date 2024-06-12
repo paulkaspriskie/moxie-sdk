@@ -2,17 +2,20 @@
   "navSocial": [
     {
       "name": "github",
-      "fileName": "github-icon.svg",
+      "fileName": "github-icon",
+      "fileType": "svg",
       "url": "https://github.com/paulkaspriskie"
     },
     {
       "name": "linked-in",
-      "fileName": "linked-in-icon.svg",
+      "fileName": "linked-in-icon",
+      "fileType": "svg",
       "url": "https://www.linkedin.com/in/paul-kaspriskie-08840095/"
     },
     {
       "name": "stack-overflow",
-      "fileName": "stack-overflow-icon.svg",
+      "fileName": "stack-overflow-icon",
+      "fileType": "svg",
       "url": "https://stackoverflow.com/users/4530176/paul-kaspriskie"
     }
   ]
