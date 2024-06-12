@@ -27,7 +27,7 @@
      font-size: 18px;
      text-decoration: none;
 
-     & > img { margin-right: 1rem; }
+     & > svg { margin-right: 1rem; }
 
    }
 
@@ -87,7 +87,7 @@
        }
      }
 
-     & > a > img { width: 25px }
+     & > a > svg { width: 25px }
 
      &:hover {
        transition: all 0.5s ease;
@@ -112,7 +112,8 @@
       flex-basis: 33%;
       text-align: center;
 
-      & > a > img { width: 30px; }
+      & > a { display: block; }
+      & > a > svg { width: 35px; }
 
       &:nth-child(2) {
         border-left: 1px solid variables.$color-brand-primary;
