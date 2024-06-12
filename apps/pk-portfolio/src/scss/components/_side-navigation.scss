@@ -112,7 +112,13 @@
       flex-basis: 33%;
       text-align: center;
 
-      & > a { display: block; }
+      & > a {
+        padding: 0.6rem 0;
+        display: block;
+
+        &:hover { background-color: darken(variables.$color-foreground-white, 5%); }
+      }
+
       & > a > svg { width: 35px; }
 
       &:nth-child(2) {
