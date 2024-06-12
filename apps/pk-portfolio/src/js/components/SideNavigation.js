@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import appData from '../api/data-app.json';
+import Icon from './Icon.js';
 
 
 const SideNavigation = ({routes}) => {
@@ -14,7 +15,7 @@ const SideNavigation = ({routes}) => {
                 className={({ isActive }) => (isActive ? 'active' : undefined)}
                 end>
                 {
-                  index === 0 ? <img src={require('../../assets/icons/pk-crane.svg')} /> :
+                  index === 0 ? <Icon name={'pk-crane-icon'} /> :
                   <img src={require(`../../assets/icons/${route.name.toLowerCase()}-icon.svg`)} />
                 }
                 {
