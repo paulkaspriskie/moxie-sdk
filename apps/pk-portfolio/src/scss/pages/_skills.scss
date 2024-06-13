@@ -1,5 +1,11 @@
 .layout-page__skills {
+
+  & > div:last-of-type {
+    padding: 2rem 4rem;
+  }
+
   .component-hero__container {
     background: linear-gradient(125deg, rgb(115, 24, 55) 0%,  rgb(195, 153, 70)  100%);
   }
+
 }

@@ -1,3 +1,15 @@
+@use "../abstracts/variables";
+
 .component-tabs__container {
+
+  & > ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+    & > li { margin-right: 1.5rem; }
+
+    & > li > a.active { color: variables.$color-brand-primary; }
+  }
 
 }
