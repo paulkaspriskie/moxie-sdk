@@ -15,7 +15,7 @@ const SideNavigation = ({routes}) => {
                 className={({ isActive }) => (isActive ? 'active' : undefined)}
                 end>
                 {
-                  index === 0 ? <img src={require(`../../assets/icons/pk-crane-icon.png`)} /> :
+                  index === 0 ? <Icon name={`pk-crane-icon`} /> :
                   <Icon name={`${route.name.toLowerCase()}-icon`} />
                 }
                 {
