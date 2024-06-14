@@ -1,3 +1,28 @@
 .component-card__container {
+  border: 1px solid #272727;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  & > div {
+    display: block;
+    width: 50%;
+  }
+
+  & > div:first-of-type {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f8fa;
+    text-align: center;
+
+    & > svg { width: 120px; }
+  }
+
+  & > div:last-of-type {
+    padding: 1.5rem;
+    line-height: 1rem;
+  }
 
 }

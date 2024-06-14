@@ -1,5 +1,18 @@
 .layout-page__projects {
+
   .component-hero__container {
     background: linear-gradient(125deg, rgb(114, 66, 146) 0%,  rgb(184, 151, 124)  100%);
   }
+
+  & > div:last-of-type {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+    .component-card__container {
+      flex-basis: 48%;
+    }
+  }
+
 }

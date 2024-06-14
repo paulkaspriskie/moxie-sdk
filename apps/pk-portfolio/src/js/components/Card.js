@@ -1,7 +1,9 @@
-const Card = () => {
+const Card = (props) => {
 
   return (
-    <div className="component-card__container"></div>
+    <div className="component-card__container">
+      {props.children}
+    </div>
   );
 
 }
