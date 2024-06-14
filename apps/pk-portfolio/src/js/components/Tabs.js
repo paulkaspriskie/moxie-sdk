@@ -6,9 +6,9 @@ const Tabs = () => {
   const [selectedTabIndex, setSelectedTabIndex ] = useState(0);
 
   const tabs = [
-    { id: 'tab1', title: 'Tab 1', content: <p>One</p> },
-    { id: 'tab2', title: 'Tab 2', content: <p>Two</p> },
-    { id: 'tab3', title: 'Tab 3', content: <p>Three</p> },
+    { id: 'tab1', title: 'Core Skills', content: <p>Core Skills</p> },
+    { id: 'tab2', title: 'Javascript', content: <p>Javascript</p> },
+    { id: 'tab3', title: 'CSS', content: <p>CSS</p> },
   ];
 
 

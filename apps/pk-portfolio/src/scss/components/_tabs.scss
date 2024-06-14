@@ -3,13 +3,26 @@
 .component-tabs__container {
 
   & > ul {
+    border-bottom: 2px solid #ddd;
     padding: 0;
     display: flex;
     list-style: none;
 
-    & > li { margin-right: 1.5rem; }
+    & > li {
+      margin-right: 1.5rem;
+      height: 30px;
+    }
 
-    & > li > a.active { color: variables.$color-brand-primary; }
+    & > li > a {
+      display: block;
+      height: 100%;
+      text-decoration: none;
+    }
+
+    & > li > a.active {
+      border-bottom: 2px solid;
+      color: variables.$color-brand-primary;
+    }
   }
 
 }
