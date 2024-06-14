@@ -8,4 +8,8 @@
     background: linear-gradient(125deg, rgb(115, 24, 55) 0%,  rgb(195, 153, 70)  100%);
   }
 
+  .component-tabs__container {
+    & > ul { margin-top: 0; }
+  }
+
 }
