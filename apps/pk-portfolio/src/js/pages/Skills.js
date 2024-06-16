@@ -1,6 +1,6 @@
 import Hero from '../components/Hero.js';
 import Tabs from '../components/Tabs.js';
-
+import TabItem from '../components/TabItem.js';
 
 const Skills = () => {
 
@@ -17,8 +17,10 @@ const Skills = () => {
 				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
       </Hero>
       <div>
-        <Tabs data={tabs}>
-          hello
+        <Tabs>
+          {tabs.map((item, i) =>
+            <TabItem key={i} label={item.title}>{item.content}</TabItem>
+          )}
         </Tabs>
       </div>
     </div>

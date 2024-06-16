@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { Children, useState } from 'react';
 
 
-const Tabs = ({data}) => {
+const Tabs = ({label, children}) => {
 
   const [activeTabIndex, setActiveTabIndex ] = useState(0);
 
@@ -9,20 +9,20 @@ const Tabs = ({data}) => {
     <div className="component-tabs__container">
       <ul>
         {
-          data.map((item, i) => {
-            return (
-              <li key={i}>
-                <a href="#" onClick={() => setActiveTabIndex(i)} className={i === activeTabIndex ? 'active' : ''}>
-                  {item.title}
-                </a>
-              </li>
-            )
-          })
+          Children.map(children, (child, index) =>
+            <li>
+              <a href="#" className={activeTabIndex === index ? 'active' : ''} onClick={() => setActiveTabIndex(index)}>
+                {child.props.label}
+              </a>
+            </li>
+          )
         }
       </ul>
-      <section>
-        {data[activeTabIndex].content}
-      </section>
+      {
+        Children.map(children, (child, index) =>
+          activeTabIndex === index ? <section>{child.props.children}</section> : null
+        )
+      }
     </div>
   );
 
