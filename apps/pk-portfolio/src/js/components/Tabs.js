@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const Tabs = ({data}) => {
 
-  const [selectedTabIndex, setSelectedTabIndex ] = useState(0);
+  const [activeTabIndex, setActiveTabIndex ] = useState(0);
 
   return (
     <div className="component-tabs__container">
@@ -12,7 +12,7 @@ const Tabs = ({data}) => {
           data.map((item, i) => {
             return (
               <li key={i}>
-                <a href="#" onClick={() => setSelectedTabIndex(i)} className={i === selectedTabIndex ? 'active' : ''}>
+                <a href="#" onClick={() => setActiveTabIndex(i)} className={i === activeTabIndex ? 'active' : ''}>
                   {item.title}
                 </a>
               </li>
@@ -21,7 +21,7 @@ const Tabs = ({data}) => {
         }
       </ul>
       <section>
-        {data[selectedTabIndex].content}
+        {data[activeTabIndex].content}
       </section>
     </div>
   );
