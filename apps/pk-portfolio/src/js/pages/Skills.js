@@ -1,6 +1,7 @@
 import Hero from '../components/Hero.js';
 import Tabs from '../components/Tabs.js';
 import TabItem from '../components/TabItem.js';
+import appData from '../api/data-app.json';
 
 const Skills = () => {
 
@@ -18,8 +19,8 @@ const Skills = () => {
       </Hero>
       <div>
         <Tabs>
-          {tabs.map((item, i) =>
-            <TabItem key={i} label={item.title}>{item.content}</TabItem>
+          {appData.skills.map((item, i) =>
+            <TabItem key={i} label={item.category}>{item.category}</TabItem>
           )}
         </Tabs>
       </div>
