@@ -14,10 +14,14 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #f6f8fa;
     text-align: center;
 
-    & > svg { width: 120px; }
+    & > svg {
+      max-height: 115px;
+      width: 120px;
+    }
   }
 
   & > div:last-of-type {
