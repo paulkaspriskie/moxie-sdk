@@ -104,6 +104,16 @@
       "category": "shell",
       "data": [
         {
+          "title": "bash",
+          "iconName": "bash-icon",
+          "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+        },
+        {
+          "title": "zsh",
+          "iconName": "zsh-icon",
+          "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+        },
+        {
           "title": "vim",
           "iconName": "vim-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
