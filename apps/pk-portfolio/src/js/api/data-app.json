@@ -25,14 +25,17 @@
       "data": [
         {
           "title": "html",
+          "iconName": "html-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         },
         {
           "title": "css",
+          "iconName": "css-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         },
         {
           "title": "javascript",
+          "iconName": "javascript-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         }
       ]
@@ -42,18 +45,22 @@
       "data": [
         {
           "title": "ecma script",
+          "iconName": "es6-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         },
         {
           "title": "nodejs",
+          "iconName": "nodejs-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         },
         {
           "title": "reactjs",
+          "iconName": "reactjs-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         },
         {
           "title": "redux",
+          "iconName": "redux-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         }
       ]
@@ -63,10 +70,12 @@
       "data": [
         {
           "title": "postcss",
+          "iconName": "postcss-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         },
         {
           "title": "sass",
+          "iconName": "sass-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         }
       ]
@@ -76,14 +85,17 @@
       "data": [
         {
           "title": "babel",
+          "iconName": "babel-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         },
         {
           "title": "npm",
+          "iconName": "npm-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         },
         {
           "title": "webpack",
+          "iconName": "webpack-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         }
       ]
@@ -93,6 +105,7 @@
       "data": [
         {
           "title": "vim",
+          "iconName": "vim-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         }
       ]
@@ -102,6 +115,7 @@
       "data": [
         {
           "title": "figma",
+          "iconName": "figma-icon",
           "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
         }
       ]
