@@ -11,8 +11,11 @@
     flex-flow: row wrap;
 
     .component-card__container {
-      flex-basis: 48%;
+      margin: 1rem 0;
+      flex-basis: 100%;
+
+      & > div:first-of-type { width: 25%; }
+      & > div:last-of-type { width: 75%; }
     }
   }
-
 }

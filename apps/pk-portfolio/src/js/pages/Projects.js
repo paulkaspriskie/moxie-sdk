@@ -15,7 +15,7 @@ const Projects = () => {
           <div><Icon name={'javascript-icon'} /></div>
           <div>
             <h3>Title</h3>
-            <p>This is a brief brief description of the project and what it does.</p>
+            <p>This is a brief brief description of the project and what it does. This is a brief brief description of the project and what it does</p>
             <a href="#">Link</a>
           </div>
         </Card>
@@ -23,7 +23,7 @@ const Projects = () => {
           <div><Icon name={'css-icon'} /></div>
           <div>
             <h3>Title</h3>
-            <p>This is a brief brief description of the project and what it does.</p>
+            <p>This is a brief brief description of the project and what it does. This is a brief brief description of the project and what it does.</p>
             <a href="#">Link</a>
           </div>
         </Card>
