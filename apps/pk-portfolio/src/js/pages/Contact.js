@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../actions/actions.js';
 import Hero from '../components/Hero.js';
-
+import Form from '../components/Form.js';
 
 const Contact = () => {
 
@@ -21,9 +21,18 @@ const Contact = () => {
         <h1>Contact</h1>
 				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
       </Hero>
-      <ul>
-        {data.map((item, i) => <li key={i}>{item.title}</li>)}
-      </ul>
+      {/* <ul> */}
+      {/*   {data.map((item, i) => <li key={i}>{item.title}</li>)} */}
+      {/* </ul> */}
+      <div>
+        <Form>
+          <input />
+          <input />
+          <input />
+          <textarea />
+          <button>Submit</button>
+        </Form>
+      </div>
     </div>
   );
 }

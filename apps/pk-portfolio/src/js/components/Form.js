@@ -1,8 +1,10 @@
 
-const Form = () => {
+const Form = (props) => {
 
   return (
-    <div className="component-form__container"></div>
+    <div className="component-form__container">
+      {props.children}
+    </div>
   );
 
 }

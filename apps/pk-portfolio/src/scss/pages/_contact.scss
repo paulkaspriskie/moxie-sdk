@@ -2,4 +2,43 @@
   .component-hero__container {
     background: linear-gradient(125deg, rgb(62, 59, 79) 0%, rgb(39, 182, 171)  100%);
   }
+
+  & > div:last-of-type {
+    padding: 2rem 4rem;
+  }
+
+  .component-form__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    input,
+    button {
+      height: 40px;
+    }
+
+    input:nth-of-type(-n+3) {
+      flex-basis: 48%;
+    }
+
+    input,
+    textarea,
+    button {
+      font-size: 18px;
+    }
+
+    input:nth-of-type(3),
+    textarea,
+    button {
+      flex-basis: 100%;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 2rem;
+    }
+
+    textarea { min-height: 200px; }
+
+  }
 }
