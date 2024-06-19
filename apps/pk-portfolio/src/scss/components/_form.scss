@@ -3,10 +3,11 @@
 .component-form__container {
 
   button {
-    border: 3px solid variables.$color-brand-primary;
+    border: 2px solid variables.$color-brand-primary;
     border-radius: 30px;
-    color: #FFF;
     background-color: variables.$color-brand-primary;
+    color: #FFF;
+    font-weight: 600;
   }
 
 }
