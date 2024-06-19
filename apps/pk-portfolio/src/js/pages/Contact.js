@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../actions/actions.js';
 import Hero from '../components/Hero.js';
 import Form from '../components/Form.js';
+import FormItem from '../components/FormItem.js';
 
 const Contact = () => {
 
@@ -26,9 +27,9 @@ const Contact = () => {
       {/* </ul> */}
       <div>
         <Form>
-          <input />
-          <input />
-          <input />
+          <FormItem labelName="Name"><input type="text" /></FormItem>
+          <FormItem labelName="Email"><input type="text" /></FormItem>
+          <FormItem labelName="Subject"><input type="text" /></FormItem>
           <textarea />
           <button>Submit</button>
         </Form>
