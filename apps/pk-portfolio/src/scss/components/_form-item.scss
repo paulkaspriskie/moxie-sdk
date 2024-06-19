@@ -1,8 +1,23 @@
+@use "../abstracts/variables";
+
 .component-form-item {
+
+  & > input { padding: 0.5rem; }
+  & > input:focus,
+  & > textarea:focus {
+    border: 2px solid variables.$color-brand-primary;
+    outline: none;
+  }
 
   & > label {
     margin-bottom: 0.4rem;
     display: block;
+  }
+
+  & > textarea {
+    padding: 0.5rem;
+    width: 100%;
+    min-height: 200px;
   }
 
 }

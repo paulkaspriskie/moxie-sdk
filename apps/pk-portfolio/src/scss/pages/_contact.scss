@@ -12,10 +12,11 @@
     flex-flow: row wrap;
     justify-content: space-between;
 
-    input,
-    button {
-      height: 40px;
-    }
+    input { height: 40px; }
+
+    button { height: 55px; }
+    button:focus { outline: 0; }
+    button:hover { cursor: pointer; }
 
     & > div:nth-of-type(-n+3) {
       flex-basis: 48%;
@@ -32,7 +33,7 @@
     }
 
     & > div:nth-of-type(3),
-    textarea,
+    & > div:nth-of-type(4),
     button {
       flex-basis: 100%;
     }
@@ -42,7 +43,10 @@
       margin: 0 0 2rem 0;
     }
 
-    textarea { min-height: 200px; }
+    textarea {
+      box-sizing: border-box;
+      min-height: 200px;
+    }
 
   }
 }
