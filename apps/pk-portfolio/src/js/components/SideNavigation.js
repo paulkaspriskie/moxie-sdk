@@ -3,12 +3,12 @@ import appData from '../api/data-app.json';
 import Icon from './Icon.js';
 
 
-const SideNavigation = ({routes}) => {
+const SideNavigation = ({ROUTES}) => {
   return (
     <>
       <nav>
         <ul>
-          {routes.map((route, index) => (
+          {ROUTES.map((route, index) => (
             <li key={route.path}>
               <NavLink
                 to={route.path}
