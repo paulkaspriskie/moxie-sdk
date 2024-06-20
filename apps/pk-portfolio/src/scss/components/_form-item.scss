@@ -2,14 +2,16 @@
 
 .component-form-item {
 
-  & > input {
-    padding: 0.5rem;
-  }
-
   & > input:focus,
   & > textarea:focus {
     border: 1.5px solid variables.$color-brand-primary;
     outline: none;
+  }
+
+  & > input {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   & > label {

@@ -2,12 +2,41 @@
 
 .component-form__container {
 
+  button,
+  input,
+  label,
+  textarea {
+    font-size: 18px;
+  }
+
+  input,
+  textarea {
+    margin: 0 0 2rem 0;
+  }
+
   button {
     border: 2px solid variables.$color-brand-primary;
     border-radius: 30px;
+    height: 55px;
     background-color: variables.$color-brand-primary;
     color: #FFF;
     font-weight: 600;
+  }
+
+  button:focus {
+    outline: 0;
+  }
+
+  button:hover {
+    background-color: darken(variables.$color-brand-primary, 3%);
+    cursor: pointer;
+  }
+
+  input { height: 40px; }
+
+  textarea {
+    box-sizing: border-box;
+    min-height: 200px;
   }
 
 }

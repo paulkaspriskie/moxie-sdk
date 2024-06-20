@@ -10,11 +10,11 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+      }
 
-        .component-card__container {
+      & > section .component-card__container {
           margin: 1rem 0 1rem 0;
           flex-basis: 48%;
-        }
       }
     }
   }
