@@ -16,6 +16,16 @@
       width: 85%;
       list-style: none;
     }
+
+    @media (width <= 1150px) {
+      width: 100px;
+    }
+
+    @media (width <= 700px) {
+      display: none;
+      visibility: hidden;
+    }
+
 }
 
 
@@ -51,7 +61,11 @@
            font-size: 16px;
            font-weight: normal;
          }
-       }
+
+         @media (width <= 1150px) {
+           display: none;
+        }
+      }
 
        &:hover {
          background: darken(variables.$color-foreground-white, 5%);
@@ -64,6 +78,10 @@
        margin-right: 1rem;
        padding: 0.6rem;
        width: 50px;
+
+       @media (width <= 1150px) {
+         margin: 0 auto;
+       }
      }
    }
 
@@ -73,6 +91,10 @@
      & > a {
        border-left: 8px solid white;
        padding: 1.5rem 0.5rem;
+
+       & > span {
+         @media (width <= 1150px) { display: none; }
+        }
      }
 
      a.active {
@@ -87,7 +109,10 @@
        }
      }
 
-     & > a > svg { width: 25px }
+     & > a > svg {
+       width: 25px;
+       @media (width <= 1150px) { margin: 0 auto; }
+     }
 
      &:hover {
        transition: all 0.5s ease;
@@ -107,6 +132,7 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    @media (width <= 1150px) { flex-flow: column wrap; }
 
     & > li {
       flex-basis: 33%;
@@ -124,6 +150,11 @@
       &:nth-child(2) {
         border-left: 1px solid variables.$color-brand-primary;
         border-right: 1px solid variables.$color-brand-primary;
+
+        @media (width <= 1150px) {
+          border-left: none;
+          border-right: none;
+        }
       }
     }
   }

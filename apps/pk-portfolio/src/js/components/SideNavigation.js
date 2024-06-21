@@ -19,7 +19,7 @@ const SideNavigation = ({ROUTES}) => {
                   <Icon name={`${route.name.toLowerCase()}-icon`} />
                 }
                 {
-                  index === 0 ? <h3>{route.name}<span>Frontend / UI Developer</span></h3> : route.name
+                  index === 0 ? <h3>{route.name}<span>Frontend / UI Developer</span></h3> : <span>{route.name}</span>
                 }
               </NavLink>
             </li>
