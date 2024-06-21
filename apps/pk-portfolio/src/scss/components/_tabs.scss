@@ -3,7 +3,7 @@
 .component-tabs__container {
 
   & > ul {
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid variables.$color-border-default;
     padding: 0;
     display: flex;
     list-style: none;

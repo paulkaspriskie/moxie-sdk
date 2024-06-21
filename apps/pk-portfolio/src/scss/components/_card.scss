@@ -1,5 +1,7 @@
+@use "../abstracts/variables";
+
 .component-card__container {
-  border: 1px solid #272727;
+  border: 1px solid variables.$color-foreground-black;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -15,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f6f8fa;
+    background-color: variables.$color-background-muted-white;
     text-align: center;
 
     & > svg {
