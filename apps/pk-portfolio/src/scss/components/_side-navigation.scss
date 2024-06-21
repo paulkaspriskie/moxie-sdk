@@ -17,11 +17,11 @@
       list-style: none;
     }
 
-    @media (width <= 1150px) {
+    @media (width <= variables.$breakpoint-medium) {
       width: 100px;
     }
 
-    @media (width <= 700px) {
+    @media (width <= variables.$breakpoint-small) {
       display: none;
       visibility: hidden;
     }
@@ -62,9 +62,13 @@
            font-weight: normal;
          }
 
-         @media (width <= 1150px) {
-           display: none;
-        }
+
+         @media (width <= 1280px) {
+           font-size: 20px;
+           & > span { font-size: 14px; }
+         }
+
+         @media (width <= variables.$breakpoint-medium) { display: none; }
       }
 
        &:hover {
@@ -79,7 +83,7 @@
        padding: 0.6rem;
        width: 50px;
 
-       @media (width <= 1150px) {
+       @media (width <= variables.$breakpoint-medium) {
          margin: 0 auto;
        }
      }
@@ -93,7 +97,7 @@
        padding: 1.5rem 0.5rem;
 
        & > span {
-         @media (width <= 1150px) { display: none; }
+         @media (width <= variables.$breakpoint-medium) { display: none; }
         }
      }
 
@@ -111,7 +115,7 @@
 
      & > a > svg {
        width: 25px;
-       @media (width <= 1150px) { margin: 0 auto; }
+       @media (width <= variables.$breakpoint-medium) { margin: 0 auto; }
      }
 
      &:hover {
@@ -132,7 +136,7 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
-    @media (width <= 1150px) { flex-flow: column wrap; }
+    @media (width <= variables.$breakpoint-medium) { flex-flow: column wrap; }
 
     & > li {
       flex-basis: 33%;
@@ -151,7 +155,7 @@
         border-left: 1px solid variables.$color-brand-primary;
         border-right: 1px solid variables.$color-brand-primary;
 
-        @media (width <= 1150px) {
+        @media (width <= variables.$breakpoint-medium) {
           border-left: none;
           border-right: none;
         }
