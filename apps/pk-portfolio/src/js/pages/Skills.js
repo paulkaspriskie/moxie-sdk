@@ -6,6 +6,27 @@ import TabItem from '../components/TabItem.js';
 import appData from '../api/data-app.json';
 
 const Skills = () => {
+
+  const capitalizeFirst = (input) => {
+
+    let wordArray = input.split(" ");
+
+    if (input !== 'css') {
+
+      for (let i = 0; i < wordArray.length; i++) {
+        wordArray[i] = wordArray[i][0].toUpperCase() + wordArray[i].substr(1);
+      };
+
+      return wordArray.join(" ");
+
+    } else {
+
+      return input.toUpperCase();
+
+    }
+
+  };
+
   return (
     <div className="layout-page__skills">
       <Hero>
@@ -15,7 +36,7 @@ const Skills = () => {
       <div>
         <Tabs>
           {appData.skills.map((item, i) =>
-            <TabItem key={i} label={item.category}>
+            <TabItem key={i} label={capitalizeFirst(item.category)}>
               {item.data.map((item, i) =>
                 <Card key={i}>
                   <div><Icon name={item.iconName} /></div>
