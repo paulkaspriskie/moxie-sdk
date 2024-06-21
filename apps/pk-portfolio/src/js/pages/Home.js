@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import ParticleLayer from '../components/ParticleLayer.js';
 
 
@@ -10,7 +9,7 @@ const Home = () => {
       <div className="layout-page__home">
         <div><img src={require("../../assets/imgs/pk-profile.png")}/></div>
         <h1>Hello there, I'm Paul Kaspriskie.</h1>
-        <p>Roquefort fromage frais macaroni cheese. Taleggio swiss squirty cheese smelly cheese smelly cheese pecorino jarlsberg cheese triangles. Babybel pecorino cheesy grin bavarian bergkase babybel boursin cheese slices roquefort. Danish fontina cheese and wine rubber cheese.</p>
+        <p>An accomplished Philadelphia based Frontend / UI Developer with over eight years of experience. Proficiencies in developing, maintaining and extending UI components to support underlying design systems / web applications.</p>
       </div>
     </>
   )
