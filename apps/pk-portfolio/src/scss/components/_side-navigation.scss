@@ -22,8 +22,10 @@
     }
 
     @media (width <= variables.$breakpoint-small) {
+      position: absolute;
       display: none;
-      visibility: hidden;
+      width: 60%;
+      overflow: scroll;
     }
 
 }
@@ -69,6 +71,7 @@
          }
 
          @media (width <= variables.$breakpoint-medium) { display: none; }
+         @media (width <= variables.$breakpoint-small) { display: block; }
       }
 
        &:hover {
@@ -83,8 +86,10 @@
        padding: 0.6rem;
        width: 50px;
 
-       @media (width <= variables.$breakpoint-medium) {
-         margin: 0 auto;
+       @media (width <= variables.$breakpoint-medium) { margin: 0 auto; }
+       @media (width <= variables.$breakpoint-small) {
+         margin: 0 1rem 0 0;
+
        }
      }
    }
@@ -98,7 +103,8 @@
 
        & > span {
          @media (width <= variables.$breakpoint-medium) { display: none; }
-        }
+         @media (width <= variables.$breakpoint-small) { display: block; }
+       }
      }
 
      a.active {
@@ -116,6 +122,7 @@
      & > a > svg {
        width: 25px;
        @media (width <= variables.$breakpoint-medium) { margin: 0 auto; }
+       @media (width <= variables.$breakpoint-small) { margin: 0 1rem 0 0; }
      }
 
      &:hover {
