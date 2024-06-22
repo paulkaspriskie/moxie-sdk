@@ -1,13 +1,17 @@
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import appData from '../api/data-app.json';
 import Icon from './Icon.js';
 
 
 const SideNavigation = ({ROUTES}) => {
+
+  const [ isActive, setIsActive ] = useState(false);
+
   return (
     <>
-      <button><Icon name={'menu-icon'} /></button>
-      <nav>
+      <button onClick={() => setIsActive(!isActive)}><Icon name={'menu-icon'} /></button>
+      <nav className={isActive ? "--is-open" : ""}>
         <ul>
           {ROUTES.map((route, index) => (
             <li key={route.path}>
