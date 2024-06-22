@@ -23,15 +23,13 @@
 
     @media (width <= variables.$breakpoint-small) {
       position: absolute;
-      left: -60%;
-      display: none;
-      visibility: hidden;
+      left: calc(-60% - 3px);
       width: 60%;
       overflow: scroll;
+      transition: left 0.4s ease-in-out;
 
       &.--is-open {
         left: 0;
-        display: flex;
         visibility: visible;
       }
     }
