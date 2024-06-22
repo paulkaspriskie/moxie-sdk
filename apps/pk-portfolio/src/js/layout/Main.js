@@ -1,5 +1,6 @@
 import { useLocation, useOutlet } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Icon from '../components/Icon.js';
 
 
 const Main = ({ROUTES}) => {
@@ -11,7 +12,7 @@ const Main = ({ROUTES}) => {
   return (
     <>
       <main>
-        <button>Menu</button>
+        <button><Icon name={'menu-icon'} /></button>
         <TransitionGroup component={null}>
           <CSSTransition
             key={location.pathname}
