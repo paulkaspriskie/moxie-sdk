@@ -11,6 +11,7 @@ const Main = ({ROUTES}) => {
   return (
     <>
       <main>
+        <button>Menu</button>
         <TransitionGroup component={null}>
           <CSSTransition
             key={location.pathname}
