@@ -31,52 +31,47 @@
 }
 
 
- .app-pk-portfolio__container > nav > ul:first-of-type {
+.app-pk-portfolio__container > nav > ul:first-of-type {
 
-   & > li > a {
-     display: flex;
-     align-items: center;
-     font-size: 18px;
-     text-decoration: none;
+  & > li > a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    & > svg { margin-right: 1rem; }
+  }
 
-     & > svg { margin-right: 1rem; }
+  & > li:first-of-type {
+    margin: 1rem 0;
+    padding: 1.5rem 0;
 
-   }
+    a {
+      width: auto;
+      color: variables.$color-brand-primary;
+      font-size: 24px;
 
-   & > li:first-of-type {
-     margin: 1rem 0;
-     padding: 1.5rem 0;
+      & > h3 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 600;
 
-     a {
-       width: auto;
-       color: variables.$color-brand-primary;
-       font-size: 24px;
+        & > span {
+          margin-top: 0.16rem;
+          display: block;
+          font-size: 16px;
+          font-weight: normal;
+        }
 
-       & > h3 {
-         margin: 0;
-         font-size: 24px;
-         font-weight: 600;
+        @media (width <= 1280px) {
+          font-size: 20px;
+          & > span { font-size: 14px; }
+        }
 
-         & > span {
-           margin-top: 0.16rem;
-           display: block;
-           font-size: 16px;
-           font-weight: normal;
-         }
-
-
-         @media (width <= 1280px) {
-           font-size: 20px;
-           & > span { font-size: 14px; }
-         }
-
-         @media (width <= variables.$breakpoint-medium) { display: none; }
-         @media (width <= variables.$breakpoint-small) { display: block; }
+        @media (width <= variables.$breakpoint-medium) { display: none; }
+        @media (width <= variables.$breakpoint-small) { display: block; }
       }
 
-       &:hover {
-         background: darken(variables.$color-foreground-white, 5%);
-       }
+      &:hover { background: darken(variables.$color-foreground-white, 5%); }
      }
 
      & > a > svg {
@@ -87,10 +82,7 @@
        width: 50px;
 
        @media (width <= variables.$breakpoint-medium) { margin: 0 auto; }
-       @media (width <= variables.$breakpoint-small) {
-         margin: 0 1rem 0 0;
-
-       }
+       @media (width <= variables.$breakpoint-small) { margin: 0 1rem 0 0; }
      }
    }
 
@@ -169,3 +161,25 @@
       }
     }
   }
+
+
+.app-pk-portfolio__container > button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  visibility: hidden;
+  margin-top: 0.5rem;
+  border: none;
+  width: 40px;
+  background-color: transparent;
+  color: variables.$color-foreground-white;
+  cursor: pointer;
+
+
+  @media (width <= variables.$breakpoint-small) {
+    display: block;
+    visibility: visible;
+  }
+}

@@ -6,6 +6,7 @@ import Icon from './Icon.js';
 const SideNavigation = ({ROUTES}) => {
   return (
     <>
+      <button><Icon name={'menu-icon'} /></button>
       <nav>
         <ul>
           {ROUTES.map((route, index) => (

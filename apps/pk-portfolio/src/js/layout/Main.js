@@ -12,7 +12,6 @@ const Main = ({ROUTES}) => {
   return (
     <>
       <main>
-        <button><Icon name={'menu-icon'} /></button>
         <TransitionGroup component={null}>
           <CSSTransition
             key={location.pathname}
