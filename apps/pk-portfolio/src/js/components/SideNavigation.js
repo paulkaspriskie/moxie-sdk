@@ -12,6 +12,7 @@ const SideNavigation = ({ROUTES}) => {
     <>
       <button onClick={() => setIsActive(!isActive)}><Icon name={'menu-icon'} /></button>
       <nav className={isActive ? "--is-open" : ""}>
+        <button onClick={() => setIsActive(!isActive)}><Icon name={'close-icon'} /></button>
         <ul>
           {ROUTES.map((route, index) => (
             <li key={route.path}>

@@ -10,6 +10,20 @@
     align-items: center;
     background-color: variables.$color-foreground-white;
 
+    & > button {
+      margin: 0.2rem;
+      display: none;
+      visibility: hidden;
+      position: absolute;
+      border: none;
+      width: 40px;
+      align-self: flex-end;
+      background-color: transparent;
+      cursor: pointer;
+
+      & > svg { color: variables.$color-brand-primary }
+    }
+
     & > ul {
       margin: 0;
       padding: 0;
@@ -24,12 +38,18 @@
     @media (width <= variables.$breakpoint-small) {
       position: absolute;
       left: calc(-60% - 3px);
+      z-index: 100;
       width: 60%;
       overflow: scroll;
       transition: left 0.4s ease-in-out;
 
       &.--is-open {
         left: 0;
+        visibility: visible;
+      }
+
+      & > button {
+        display: block;
         visibility: visible;
       }
     }
