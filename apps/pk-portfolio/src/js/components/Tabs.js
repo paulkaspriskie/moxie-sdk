@@ -1,13 +1,18 @@
-import React, { Children, useState } from 'react';
+import React, { Children, useRef, useState } from 'react';
 
 
 const Tabs = ({label, children}) => {
 
   const [activeTabIndex, setActiveTabIndex ] = useState(0);
+  const ref = useRef(null);
+
+  const scrollAdvance = (scrollOffset) => {
+    ref.current.scrollLeft += scrollOffset;
+  };
 
   return (
     <div className="component-tabs__container">
-      <ul>
+      <ul ref={ref}>
         {
           Children.map(children, (child, index) =>
             <li>
@@ -17,6 +22,7 @@ const Tabs = ({label, children}) => {
             </li>
           )
         }
+        <button onClick={() => scrollAdvance(60)}>></button>
       </ul>
       {
         Children.map(children, (child, index) =>

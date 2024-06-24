@@ -6,15 +6,7 @@
     padding: 2rem 4rem;
 
     .component-tabs__container {
-      & > ul {
-        margin-top: 0;
-        @media (width <= 840px) {
-          overflow-x: scroll;
-          overflow-y: hidden;
-          white-space: nowrap;
-          scrollbar-width: none;
-        }
-      }
+      & > ul {  margin-top: 0; }
 
       section {
         display: flex;

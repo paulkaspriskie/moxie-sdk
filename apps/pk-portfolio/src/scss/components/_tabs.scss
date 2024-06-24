@@ -8,6 +8,7 @@
     display: flex;
     list-style: none;
 
+
     & > li {
       margin-right: 1.5rem;
       height: 30px;
@@ -23,6 +24,25 @@
       border-bottom: 2px solid;
       color: variables.$color-brand-primary;
     }
+
+    button {
+      position: absolute;
+      display: none;
+      visibility: hidden;
+    }
+
+    @media (width <= 840px) {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      scrollbar-width: none;
+
+      button {
+        display: block;
+        visibility: visible;
+      }
+    }
+
   }
 
 }
