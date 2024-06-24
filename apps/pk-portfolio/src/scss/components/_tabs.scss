@@ -8,7 +8,6 @@
     display: flex;
     list-style: none;
 
-
     & > li {
       margin-right: 1.5rem;
       height: 30px;
@@ -36,10 +35,12 @@
       overflow-y: hidden;
       white-space: nowrap;
       scrollbar-width: none;
+      scroll-behavior: smooth;
 
       & > button {
         display: block;
         visibility: visible;
+        inset-inline-end: 30px;
       }
     }
 

@@ -22,7 +22,7 @@ const Tabs = ({label, children}) => {
             </li>
           )
         }
-        <button onClick={() => scrollAdvance(60)}>></button>
+        <button onClick={() => scrollAdvance(70)}>></button>
       </ul>
       {
         Children.map(children, (child, index) =>
