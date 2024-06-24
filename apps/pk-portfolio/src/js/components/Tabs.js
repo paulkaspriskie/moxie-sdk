@@ -1,18 +1,42 @@
-import React, { Children, useRef, useState } from 'react';
+import React, { Children, useEffect, useRef, useState } from 'react';
 
 
 const Tabs = ({label, children}) => {
 
-  const [activeTabIndex, setActiveTabIndex ] = useState(0);
+  const [ activeTabIndex, setActiveTabIndex ] = useState(0);
+  const [ hasOverflow, setHasOverflow ] = useState(false);
+  const [ isScrollBottom, setIsScrollBottom ] = useState(false)
   const ref = useRef(null);
+
 
   const scrollAdvance = (scrollOffset) => {
     ref.current.scrollLeft += scrollOffset;
   };
 
+
+  const handleScroll = () => {
+    const container = ref.current;
+
+    if(container) {
+      const isAtBottom = container.scrollWidth - container.scrollLeft <= container.clientWidth + 1;
+      setIsScrollBottom(isAtBottom);
+    }
+
+  };
+
+
+  useEffect(() => {
+
+    if(ref.current.offsetWidth < ref.current.scrollWidth) {
+      setHasOverflow(true);
+    }
+
+
+  }, [ref]);
+
   return (
     <div className="component-tabs__container">
-      <ul ref={ref}>
+      <ul ref={ref} onScroll={handleScroll}>
         {
           Children.map(children, (child, index) =>
             <li>
@@ -22,7 +46,7 @@ const Tabs = ({label, children}) => {
             </li>
           )
         }
-        <button onClick={() => scrollAdvance(70)}>></button>
+        { isScrollBottom ? null : <button onClick={() => scrollAdvance(70)}>></button> }
       </ul>
       {
         Children.map(children, (child, index) =>
