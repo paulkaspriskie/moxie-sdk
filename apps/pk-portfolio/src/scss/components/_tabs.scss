@@ -25,7 +25,7 @@
       color: variables.$color-brand-primary;
     }
 
-    button {
+    & > button {
       position: absolute;
       display: none;
       visibility: hidden;
@@ -37,7 +37,7 @@
       white-space: nowrap;
       scrollbar-width: none;
 
-      button {
+      & > button {
         display: block;
         visibility: visible;
       }

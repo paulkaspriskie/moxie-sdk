@@ -9,8 +9,10 @@
 
   & > section {
     margin: 2rem 4rem;
-    width: 40%;
+    width: 50%;
     color: variables.$color-foreground-white;
+
+    @media (width <= variables.$breakpoint-medium) { width: 100%; }
   }
 
   & > section >  h1 { font-size: 32px; }
