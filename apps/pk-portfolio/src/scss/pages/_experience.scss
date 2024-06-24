@@ -4,11 +4,9 @@
     background: linear-gradient(180.971deg, rgb(189, 50, 136) 0%, rgb(187, 113, 49) 100%);
   }
 
-  .component-verticle-timeline__container {
-    margin: 0 auto;
-    padding: 2rem 0;
-    width: 90%;
-  }
+  & > div:last-of-type { padding: 2rem 4rem; }
+
+  .component-verticle-timeline__container { width: 100%; }
 
 }
 
