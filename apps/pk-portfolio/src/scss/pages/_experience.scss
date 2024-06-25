@@ -1,10 +1,15 @@
+@use "../abstracts/variables";
+
 .layout-page__experience {
 
   .component-hero__container {
     background: linear-gradient(180.971deg, rgb(189, 50, 136) 0%, rgb(187, 113, 49) 100%);
   }
 
-  & > div:last-of-type { padding: 2rem 4rem; }
+  & > div:last-of-type {
+    padding: 2rem 4rem;
+    @media (width <= variables.$breakpoint-small) { padding: 2rem 2.5rem; }
+  }
 
   .component-verticle-timeline__container { width: 100%; }
 

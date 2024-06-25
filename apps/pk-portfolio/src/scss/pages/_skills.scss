@@ -4,6 +4,7 @@
 
   & > div:last-of-type {
     padding: 2rem 4rem;
+    @media (width <= variables.$breakpoint-small) { padding: 2rem 2.5rem; }
 
     .component-tabs__container {
       & > ul {  margin-top: 0; }

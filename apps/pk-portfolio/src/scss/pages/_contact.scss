@@ -6,7 +6,10 @@
     background: linear-gradient(125deg, rgb(62, 59, 79) 0%, rgb(39, 182, 171)  100%);
   }
 
-  & > div:last-of-type { padding: 2rem 4rem; }
+  & > div:last-of-type {
+    padding: 2rem 4rem;
+    @media (width <= variables.$breakpoint-small) { padding: 2rem 2.5rem; }
+  }
 
   .component-form__container {
     display: flex;
