@@ -7,11 +7,9 @@
   }
 
   & > div:last-of-type {
-    padding: 2rem 4rem;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    @media (width <= variables.$breakpoint-small) { padding: 2rem 2.5rem; }
 
     .component-card__container {
       margin: 1rem 0;

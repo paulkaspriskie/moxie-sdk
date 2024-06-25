@@ -25,7 +25,7 @@ const Contact = () => {
       {/* <ul> */}
       {/*   {data.map((item, i) => <li key={i}>{item.title}</li>)} */}
       {/* </ul> */}
-      <div>
+      <div className={'layout-page__content'}>
         <Form>
           <FormItem labelName="Name"><input type="text" /></FormItem>
           <FormItem labelName="Email"><input type="text" /></FormItem>

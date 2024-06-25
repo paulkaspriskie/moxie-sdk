@@ -9,7 +9,7 @@ const Experience = () => {
         <h1>Experience</h1>
 				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
       </Hero>
-      <div>
+      <div className={'layout-page__content'}>
         <VerticleTimeline>
           {appData.experience.map((item, i) =>
             <li key={i}>

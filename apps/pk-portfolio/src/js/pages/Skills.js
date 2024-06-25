@@ -33,7 +33,7 @@ const Skills = () => {
         <h1>Skills</h1>
 				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
       </Hero>
-      <div>
+      <div className={'layout-page__content'}>
         <Tabs>
           {appData.skills.map((item, i) =>
             <TabItem key={i} label={capitalizeFirst(item.category)}>

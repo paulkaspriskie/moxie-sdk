@@ -10,7 +10,7 @@ const Projects = () => {
         <h1>Projects</h1>
 				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
       </Hero>
-      <div>
+      <div className={'layout-page__content'}>
         <Card>
           <div><Icon name={'javascript-icon'} /></div>
           <div>
