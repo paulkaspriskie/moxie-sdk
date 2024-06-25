@@ -49,8 +49,8 @@ const Tabs = ({label, children}) => {
             </li>
           )
         }
-        { isScrollTop ? null : <button onClick={() => scrollAdvance(-70)} className={'prev'}>p</button>}
-        { isScrollBottom ? null : <button onClick={() => scrollAdvance(70)} className={'next'}>></button> }
+        { isScrollTop ? null : <button onClick={() => scrollAdvance(-70)} className={'prev'}>&#60;</button>}
+        { isScrollBottom ? null : <button onClick={() => scrollAdvance(70)} className={'next'}>&#62;</button> }
       </ul>
       {
         Children.map(children, (child, index) =>
