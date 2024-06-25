@@ -5,6 +5,7 @@ const Tabs = ({label, children}) => {
 
   const [ activeTabIndex, setActiveTabIndex ] = useState(0);
   const [ hasOverflow, setHasOverflow ] = useState(false);
+  const [ isScrollTop, setIsScrollTop ] = useState(true)
   const [ isScrollBottom, setIsScrollBottom ] = useState(false)
   const ref = useRef(null);
 
@@ -20,7 +21,9 @@ const Tabs = ({label, children}) => {
     if(container) {
       const isAtBottom = container.scrollWidth - container.scrollLeft <= container.clientWidth + 1;
       setIsScrollBottom(isAtBottom);
+      setIsScrollTop(container.scrollLeft === 0);
     }
+
 
   };
 
@@ -31,8 +34,8 @@ const Tabs = ({label, children}) => {
       setHasOverflow(true);
     }
 
-
   }, [ref]);
+
 
   return (
     <div className="component-tabs__container">
@@ -46,7 +49,8 @@ const Tabs = ({label, children}) => {
             </li>
           )
         }
-        { isScrollBottom ? null : <button onClick={() => scrollAdvance(70)}>></button> }
+        { isScrollTop ? null : <button onClick={() => scrollAdvance(-70)} className={'prev'}>p</button>}
+        { isScrollBottom ? null : <button onClick={() => scrollAdvance(70)} className={'next'}>></button> }
       </ul>
       {
         Children.map(children, (child, index) =>

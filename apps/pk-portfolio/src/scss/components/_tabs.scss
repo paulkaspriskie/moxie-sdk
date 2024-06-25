@@ -40,7 +40,9 @@
       & > button {
         display: block;
         visibility: visible;
-        inset-inline-end: 30px;
+
+        &.prev { inset-inline-start: 30px; }
+        &.next { inset-inline-end: 30px; }
       }
     }
 
