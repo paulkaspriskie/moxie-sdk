@@ -14,6 +14,10 @@
   flex-direction: column;
   color: variables.$color-foreground-white;
 
+  @media (width <= variables.$breakpoint-small) {
+    padding: 0 1.5rem;
+  }
+
   & > div {
 
     & > img {
@@ -23,22 +27,27 @@
     }
 
     @media (width <= variables.$breakpoint-small) {
-      width: 80%;
+      width: 60%;
       & > img { width: 100%; }
     }
   }
 
-
-
-  & > h1 { font-size: 32px !important; }
+  & > h1 {
+    font-size: 32px;
+    @media (width <= variables.$breakpoint-small) { font-size: 20px; }
+  }
 
   & > p {
     margin: 0;
     width: 60%;
     text-align: center;
-    font-size: 14pt;
+    font-size: 18px;
     line-height: 1.8rem;
-    @media (width <= variables.$breakpoint-small) { width: 100%; }
+    @media (width <= variables.$breakpoint-small) {
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.4rem;
+    }
   }
 }
 
