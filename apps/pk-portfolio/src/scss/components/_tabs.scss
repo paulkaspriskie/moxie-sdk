@@ -28,6 +28,8 @@
       position: absolute;
       display: none;
       visibility: hidden;
+
+      & > svg { width: 15px; }
     }
 
     @media (width <= 840px) {

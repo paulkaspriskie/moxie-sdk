@@ -1,5 +1,5 @@
 import React, { Children, useEffect, useRef, useState } from 'react';
-
+import Icon from './Icon.js';
 
 const Tabs = ({label, children}) => {
 
@@ -49,8 +49,8 @@ const Tabs = ({label, children}) => {
             </li>
           )
         }
-        { isScrollTop ? null : <button onClick={() => scrollAdvance(-70)} className={'prev'}>&#60;</button>}
-        { isScrollBottom ? null : <button onClick={() => scrollAdvance(70)} className={'next'}>&#62;</button> }
+        { isScrollTop ? null : <button onClick={() => scrollAdvance(-70)} className={'prev'}><Icon name={'chevron-left-icon'} /></button>}
+        { isScrollBottom ? null : <button onClick={() => scrollAdvance(70)} className={'next'}><Icon name={'chevron-right-icon'} /></button> }
       </ul>
       {
         Children.map(children, (child, index) =>
