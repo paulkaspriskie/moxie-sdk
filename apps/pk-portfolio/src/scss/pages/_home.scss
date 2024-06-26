@@ -6,18 +6,29 @@
   right: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  padding: 0 2rem;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: variables.$color-foreground-white;
 
-  & > div > img {
-    border: 4px solid variables.$color-brand-primary;
-    border-radius: 15%;
-    width: 412px;
+  & > div {
+
+    & > img {
+      border: 4px solid variables.$color-brand-primary;
+      border-radius: 15%;
+      width: 412px;
+    }
+
+    @media (width <= variables.$breakpoint-small) {
+      width: 80%;
+      & > img { width: 100%; }
+    }
   }
+
+
 
   & > h1 { font-size: 32px !important; }
 
@@ -27,6 +38,7 @@
     text-align: center;
     font-size: 14pt;
     line-height: 1.8rem;
+    @media (width <= variables.$breakpoint-small) { width: 100%; }
   }
 }
 
