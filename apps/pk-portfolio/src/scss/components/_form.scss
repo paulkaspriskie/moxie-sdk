@@ -17,10 +17,12 @@
   button {
     border: 2px solid variables.$color-brand-primary;
     border-radius: 30px;
+    padding: 0 1.5rem;
     height: 55px;
     background-color: variables.$color-brand-primary;
     color: variables.$color-foreground-white;
     font-weight: 600;
+    @media (width <= variables.$breakpoint-medium) { padding: 0 2.5rem; }
   }
 
   button:focus {
