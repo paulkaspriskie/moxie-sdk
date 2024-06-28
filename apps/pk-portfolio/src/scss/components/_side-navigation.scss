@@ -166,7 +166,7 @@
     display: flex;
     justify-content: space-between;
     @media (width <= variables.$breakpoint-medium) { flex-flow: column wrap; }
-    @media (width <= variables.$breakpoint-medium) { flex-flow: row wrap; }
+    @media (width <= variables.$breakpoint-small) { flex-flow: row wrap; }
 
     & > li {
       flex-basis: 33%;
