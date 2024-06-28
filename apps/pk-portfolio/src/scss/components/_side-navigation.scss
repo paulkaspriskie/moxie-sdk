@@ -37,9 +37,9 @@
 
     @media (width <= variables.$breakpoint-small) {
       position: absolute;
-      left: calc(-60% - 3px);
+      left: calc(-75% - 3px);
       z-index: 100;
-      width: 60%;
+      width: 75%;
       overflow: scroll;
       transition: left 0.4s ease-in-out;
 
@@ -94,7 +94,11 @@
         }
 
         @media (width <= variables.$breakpoint-medium) { display: none; }
-        @media (width <= variables.$breakpoint-small) { display: block; }
+        @media (width <= variables.$breakpoint-small) {
+          display: block;
+          font-size: 18px;
+          & > span { font-size: 12px; }
+        }
       }
 
       &:hover { background: darken(variables.$color-foreground-white, 5%); }
@@ -162,6 +166,7 @@
     display: flex;
     justify-content: space-between;
     @media (width <= variables.$breakpoint-medium) { flex-flow: column wrap; }
+    @media (width <= variables.$breakpoint-medium) { flex-flow: row wrap; }
 
     & > li {
       flex-basis: 33%;
