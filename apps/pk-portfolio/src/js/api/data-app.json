@@ -37,6 +37,22 @@
       "url": "https://stackoverflow.com/users/4530176/paul-kaspriskie"
     }
   ],
+  "projects": {
+    "content": [
+      {
+        "name": "bevy",
+        "icon": "",
+        "description": "A brief description of the projects usecase and underlying technologies.",
+        "urls": []
+      },
+      {
+        "name": "moxie-sdk",
+        "icon": "",
+        "description": "A brief description of the projects usecase and underlying technologies.",
+        "urls": []
+      }
+    ]
+  },
   "skills": {
     "content": [
       {
