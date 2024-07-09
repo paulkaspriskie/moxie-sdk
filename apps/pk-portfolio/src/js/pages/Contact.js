@@ -4,6 +4,8 @@ import { fetchData } from '../actions/actions.js';
 import Hero from '../components/Hero.js';
 import Form from '../components/Form.js';
 import FormItem from '../components/FormItem.js';
+import appData from '../api/data-app.json';
+
 
 const Contact = () => {
 
@@ -19,8 +21,8 @@ const Contact = () => {
   return (
     <div className="layout-page__contact">
       <Hero>
-        <h1>Contact</h1>
-				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
+        <h1>{appData.contact.title.charAt(0).toUpperCase() + appData.contact.title.slice(1)}</h1>
+				<p>{appData.contact.description}</p>
       </Hero>
       {/* <ul> */}
       {/*   {data.map((item, i) => <li key={i}>{item.title}</li>)} */}
