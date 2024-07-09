@@ -30,8 +30,8 @@ const Skills = () => {
   return (
     <div className="layout-page__skills">
       <Hero>
-        <h1>Skills</h1>
-				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
+        <h1>{appData.skills.title.charAt(0).toUpperCase() + appData.skills.title.slice(1)}</h1>
+				<p>{appData.skills.description}</p>
       </Hero>
       <div className={'layout-page__content'}>
         <Tabs>

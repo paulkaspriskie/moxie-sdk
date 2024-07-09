@@ -1,14 +1,15 @@
 import Card from '../components/Card.js';
 import Hero from '../components/Hero.js';
 import Icon from '../components/Icon.js';
+import appData from '../api/data-app.json';
 
 
 const Projects = () => {
   return (
     <div className="layout-page__projects">
       <Hero>
-        <h1>Projects</h1>
-				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
+        <h1>{appData.projects.title.charAt(0).toUpperCase() + appData.projects.title.slice(1)}</h1>
+				<p>{appData.projects.description}</p>
       </Hero>
       <div className={'layout-page__content'}>
         <Card>
