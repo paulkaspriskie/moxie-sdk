@@ -35,7 +35,7 @@ const Skills = () => {
       </Hero>
       <div className={'layout-page__content'}>
         <Tabs>
-          {appData.skills.map((item, i) =>
+          {appData.skills.content.map((item, i) =>
             <TabItem key={i} label={capitalizeFirst(item.category)}>
               {item.data.map((item, i) =>
                 <Card key={i}>
