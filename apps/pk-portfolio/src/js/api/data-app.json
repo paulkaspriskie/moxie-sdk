@@ -1,5 +1,7 @@
 {
   "experience": {
+    "title": "experience",
+    "description": "This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.",
     "content": [
       {
         "date": "September 2021 - Present",
@@ -38,6 +40,8 @@
     }
   ],
   "projects": {
+    "title": "projects",
+    "description": "This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.",
     "content": [
       {
         "name": "bevy",
@@ -54,6 +58,8 @@
     ]
   },
   "skills": {
+    "title": "projects",
+    "description": "This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.",
     "content": [
       {
         "category" : "core skills",
