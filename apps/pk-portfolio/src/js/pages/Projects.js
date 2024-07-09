@@ -1,4 +1,4 @@
-import Card from '../components/Card.js';
+import List from '../components/List.js';
 import Hero from '../components/Hero.js';
 import Icon from '../components/Icon.js';
 import appData from '../api/data-app.json';
@@ -14,14 +14,14 @@ const Projects = () => {
       <div className={'layout-page__content'}>
         {
           appData.projects.content.map((item, i) =>
-            <Card key={i}>
+            <List key={i}>
               <div><Icon name={item.icon} /></div>
               <div>
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
                 <a href="#">Link</a>
               </div>
-            </Card>
+            </List>
           )
         }
       </div>
