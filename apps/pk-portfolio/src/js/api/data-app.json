@@ -50,13 +50,13 @@
     "content": [
       {
         "name": "bevy",
-        "icon": "",
+        "icon": "javascript-icon",
         "description": "A brief description of the projects usecase and underlying technologies.",
         "urls": []
       },
       {
         "name": "moxie-sdk",
-        "icon": "",
+        "icon": "css-icon",
         "description": "A brief description of the projects usecase and underlying technologies.",
         "urls": []
       }
