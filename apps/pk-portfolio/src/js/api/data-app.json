@@ -1,20 +1,22 @@
 {
-  "experience": [
-    {
-      "date": "September 2021 - Present",
-      "role": "UI Developer",
-      "company": "Barclays",
-      "location": "Wilmington, Delaware",
-      "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
-    },
-    {
-      "date": "October 2015 - August 2021",
-      "role": "Web Developer",
-      "company": "Temple University",
-      "location": "Philadelphia, Pennsylvania",
-      "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
-    }
-  ],
+  "experience": {
+    "content": [
+      {
+        "date": "September 2021 - Present",
+        "role": "UI Developer",
+        "company": "Barclays",
+        "location": "Wilmington, Delaware",
+        "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+      },
+      {
+        "date": "October 2015 - August 2021",
+        "role": "Web Developer",
+        "company": "Temple University",
+        "location": "Philadelphia, Pennsylvania",
+        "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+      }
+    ]
+  },
   "navSocial": [
     {
       "name": "github",

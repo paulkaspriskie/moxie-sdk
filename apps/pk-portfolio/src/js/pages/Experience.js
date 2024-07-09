@@ -11,7 +11,7 @@ const Experience = () => {
       </Hero>
       <div className={'layout-page__content'}>
         <VerticleTimeline>
-          {appData.experience.map((item, i) =>
+          {appData.experience.content.map((item, i) =>
             <li key={i}>
               <div></div>
               <time>{item.date}</time>
