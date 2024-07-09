@@ -15,12 +15,14 @@ const Projects = () => {
         {
           appData.projects.content.map((item, i) =>
             <List key={i}>
-              <div><Icon name={item.icon} /></div>
-              <div>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-                <a href="#">Link</a>
-              </div>
+              <li>
+                <div><Icon name={item.icon} /></div>
+                <section>
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                  <a href="#">Link</a>
+                </section>
+              </li>
             </List>
           )
         }
