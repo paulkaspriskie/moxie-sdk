@@ -12,22 +12,18 @@ const Projects = () => {
 				<p>{appData.projects.description}</p>
       </Hero>
       <div className={'layout-page__content'}>
-        <Card>
-          <div><Icon name={'javascript-icon'} /></div>
-          <div>
-            <h3>Title</h3>
-            <p>This is a brief brief description of the project and what it does. This is a brief brief description of the project and what it does</p>
-            <a href="#">Link</a>
-          </div>
-        </Card>
-        <Card>
-          <div><Icon name={'css-icon'} /></div>
-          <div>
-            <h3>Title</h3>
-            <p>This is a brief brief description of the project and what it does. This is a brief brief description of the project and what it does.</p>
-            <a href="#">Link</a>
-          </div>
-        </Card>
+        {
+          appData.projects.content.map((item, i) =>
+            <Card key={i}>
+              <div><Icon name={item.icon} /></div>
+              <div>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <a href="#">Link</a>
+              </div>
+            </Card>
+          )
+        }
       </div>
     </div>
   )
