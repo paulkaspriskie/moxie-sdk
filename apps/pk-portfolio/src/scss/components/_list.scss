@@ -10,7 +10,7 @@
   }
 
   & > ul > li {
-    border-bottom: 1px solid #d0d7de;
+    border-bottom: 1px solid variables.$color-border-default;
     padding: 2rem 0;
     display: flex;
 
