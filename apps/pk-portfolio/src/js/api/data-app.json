@@ -51,13 +51,13 @@
       {
         "name": "bevy",
         "icon": "javascript-icon",
-        "description": "A brief description of the projects usecase and underlying technologies.",
+        "description": "A shell based bulk installer and manager for vim and shell plugins.",
         "urls": []
       },
       {
         "name": "moxie-sdk",
         "icon": "css-icon",
-        "description": "A brief description of the projects usecase and underlying technologies.",
+        "description": "A micro front-end architecture to rapidly develop and deploy react apps.",
         "urls": []
       }
     ]
