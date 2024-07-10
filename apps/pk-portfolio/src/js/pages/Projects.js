@@ -18,7 +18,7 @@ const Projects = () => {
               <li>
                 <div><Icon name={item.icon} /></div>
                 <section>
-                  <h3>{item.name}</h3>
+                  <h3>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</h3>
                   <p>{item.description}</p>
                   <a href="#">Link</a>
                 </section>
