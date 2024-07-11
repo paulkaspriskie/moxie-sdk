@@ -1,6 +1,7 @@
 import Hero from '../components/Hero.js';
 import VerticleTimeline from '../components/VerticleTimeline.js';
 import appData from '../api/data-app.json';
+import resume from '../../assets/docs/resume-kaspriskie.pdf';
 
 const Experience = () => {
   return (
@@ -8,6 +9,7 @@ const Experience = () => {
       <Hero>
         <h1>Experience</h1>
 				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
+        <a href={resume} target="_blank">Download Resume</a>
       </Hero>
       <div className={'layout-page__content'}>
         <VerticleTimeline>

@@ -12,6 +12,8 @@
     width: 50%;
     color: variables.$color-foreground-white;
 
+    a { color: variables.$color-foreground-white }
+
     @media (width <= variables.$breakpoint-medium) { width: 100%; }
   }
 
