@@ -52,13 +52,23 @@
         "name": "bevy",
         "icon": "javascript-icon",
         "description": "A shell based bulk installer and manager for vim and shell plugins.",
-        "urls": []
+        "links": [
+          {
+            "name": "github",
+            "url": "https://github.com/paulkaspriskie/bevy"
+          }
+        ]
       },
       {
         "name": "moxie-sdk",
         "icon": "css-icon",
         "description": "A micro front-end architecture to rapidly develop and deploy react apps.",
-        "urls": []
+        "links": [
+          {
+            "name": "github",
+            "url": "https://github.com/paulkaspriskie/moxie-sdk"
+          }
+        ]
       }
     ]
   },
