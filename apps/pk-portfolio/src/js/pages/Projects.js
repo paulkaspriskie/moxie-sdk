@@ -22,7 +22,7 @@ const Projects = () => {
                   <p>{item.description}</p>
                   {
                     item.links.map((item, i) =>
-                      <a href={item.url} target="_blank">{item.name}</a>
+                      <a href={item.url} target="_blank">{item.name}<Icon name={`${item.name}-icon`}/></a>
                     )
                   }
                 </section>

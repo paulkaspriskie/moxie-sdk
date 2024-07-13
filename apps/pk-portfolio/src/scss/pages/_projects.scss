@@ -8,7 +8,6 @@
 
   & > div:last-of-type {
     display: flex;
-    justify-content: space-between;
     flex-flow: row wrap;
 
     .component-card__container {
@@ -18,5 +17,18 @@
       & > div:first-of-type { width: 25%; }
       & > div:last-of-type { width: 75%; }
     }
+
+    .component-list__container {
+
+      & > ul > li > section > a {
+        display: flex;
+        svg {
+          margin-left: 4px;
+          width: 20px;
+        }
+      }
+
+    }
+
   }
 }
