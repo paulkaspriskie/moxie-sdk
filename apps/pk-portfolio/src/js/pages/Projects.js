@@ -20,7 +20,11 @@ const Projects = () => {
                 <section>
                   <h3>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</h3>
                   <p>{item.description}</p>
-                  <a href="#">Link</a>
+                  {
+                    item.links.map((item, i) =>
+                      <a href={item.url} target="_blank">{item.name}</a>
+                    )
+                  }
                 </section>
               </li>
             </List>
