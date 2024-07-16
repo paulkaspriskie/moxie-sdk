@@ -43,9 +43,9 @@ const Tabs = ({label, children}) => {
         {
           Children.map(children, (child, index) =>
             <li>
-              <a href="#" className={activeTabIndex === index ? 'active' : ''} onClick={() => setActiveTabIndex(index)}>
+              <button className={activeTabIndex === index ? 'active' : ''} onClick={() => setActiveTabIndex(index)}>
                 {child.props.label}
-              </a>
+              </button>
             </li>
           )
         }
