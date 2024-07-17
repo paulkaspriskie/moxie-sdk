@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import emailjs from '@emailjs/browser';
 import { fetchData } from '../actions/actions.js';
 import Hero from '../components/Hero.js';
 import Form from '../components/Form.js';
@@ -11,12 +12,28 @@ const Contact = () => {
 
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.data);
+  const form = useRef();
+
 
   useEffect(() => {
 
     dispatch(fetchData());
 
   }, [dispatch]);
+
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('', '', form.current, {
+      publicKey: '',
+    }).then(() => {
+      console.log('SUCCESS!');
+    }, (error) => {
+      console.log(`FAILED ${error.text}`);
+    });
+  }
+
 
   return (
     <div className="layout-page__contact">
