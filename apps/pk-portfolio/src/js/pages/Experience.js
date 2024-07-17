@@ -9,7 +9,7 @@ const Experience = () => {
     <div className="layout-page__experience">
       <Hero>
         <h1>Experience</h1>
-				<p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
+        <p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
         <a href={resume} target="_blank">Download Resume<Icon name={'file-download-icon'} /></a>
       </Hero>
       <div className={'layout-page__content'}>

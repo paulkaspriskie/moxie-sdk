@@ -9,7 +9,7 @@ const Projects = () => {
     <div className="layout-page__projects">
       <Hero>
         <h1>{appData.projects.title.charAt(0).toUpperCase() + appData.projects.title.slice(1)}</h1>
-				<p>{appData.projects.description}</p>
+        <p>{appData.projects.description}</p>
       </Hero>
       <div className={'layout-page__content'}>
         {

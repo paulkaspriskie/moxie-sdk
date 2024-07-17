@@ -39,7 +39,7 @@ const Contact = () => {
     <div className="layout-page__contact">
       <Hero>
         <h1>{appData.contact.title.charAt(0).toUpperCase() + appData.contact.title.slice(1)}</h1>
-				<p>{appData.contact.description}</p>
+        <p>{appData.contact.description}</p>
       </Hero>
       {/* <ul> */}
       {/*   {data.map((item, i) => <li key={i}>{item.title}</li>)} */}

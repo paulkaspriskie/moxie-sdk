@@ -31,7 +31,7 @@ const Skills = () => {
     <div className="layout-page__skills">
       <Hero>
         <h1>{appData.skills.title.charAt(0).toUpperCase() + appData.skills.title.slice(1)}</h1>
-				<p>{appData.skills.description}</p>
+        <p>{appData.skills.description}</p>
       </Hero>
       <div className={'layout-page__content'}>
         <Tabs>
