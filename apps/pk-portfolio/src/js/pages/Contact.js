@@ -25,8 +25,8 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('', '', form.current, {
-      publicKey: '',
+    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, {
+      publicKey: process.env.PUBLIC_KEY,
     }).then(() => {
       console.log('SUCCESS!');
     }, (error) => {
