@@ -46,10 +46,10 @@ const Contact = () => {
       {/* </ul> */}
       <div className={'layout-page__content'}>
         <Form>
-          <FormItem labelName="Name"><input type="text" /></FormItem>
-          <FormItem labelName="Email"><input type="text" /></FormItem>
-          <FormItem labelName="Subject"><input type="text" /></FormItem>
-          <FormItem labelName="Message"><textarea /></FormItem>
+          <FormItem labelName="Name"><input type="text" required /></FormItem>
+          <FormItem labelName="Email"><input type="text" required /></FormItem>
+          <FormItem labelName="Subject"><input type="text" required /></FormItem>
+          <FormItem labelName="Message"><textarea required /></FormItem>
           <button>Submit</button>
         </Form>
       </div>
