@@ -8,8 +8,8 @@ const Experience = () => {
   return (
     <div className="layout-page__experience">
       <Hero>
-        <h1>Experience</h1>
-        <p>This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.</p>
+        <h1>{appData.experience.title.charAt(0).toUpperCase() + appData.experience.title.slice(1)}</h1>
+        <p>{appData.experience.description}</p>
         <a href={resume} target="_blank">Download Resume<Icon name={'file-download-icon'} /></a>
       </Hero>
       <div className={'layout-page__content'}>
