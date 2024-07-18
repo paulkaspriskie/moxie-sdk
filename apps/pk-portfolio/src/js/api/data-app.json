@@ -1,4 +1,8 @@
 {
+  "bio": {
+    "title": "Hello there, I'm Paul Kaspriskie.",
+    "description": "An accomplished Philadelphia based Frontend / UI Developer with over eight years of experience. Proficiencies in developing, maintaining and extending UI components to support underlying design systems / web applications."
+  },
   "contact": {
     "title": "contact",
     "description": "This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.",
