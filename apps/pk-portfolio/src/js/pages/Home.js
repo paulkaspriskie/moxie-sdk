@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <ParticleLayer />
       <div className="layout-page__home">
-        <div><img src={require("../../assets/imgs/pk-profile.png")}/></div>
+        <div><img src={require(`../../assets/imgs/${appData.bio.image}`)}/></div>
         <h1>{appData.bio.title}</h1>
         <p>{appData.bio.description}</p>
       </div>
