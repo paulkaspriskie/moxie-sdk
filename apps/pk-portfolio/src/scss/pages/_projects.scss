@@ -12,7 +12,7 @@
 
     .component-list__container {
       & > ul > li > section > a {
-        display: flex;
+        display: inline-flex;
         svg {
           margin-left: 4px;
           width: 20px;
