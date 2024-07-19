@@ -27,7 +27,10 @@
     & > section {
       flex-basis: calc(100% - 67px);
       & > h3 { margin: 0; }
-      & > p { margin: 0.6rem 0; }
+      & > p {
+        margin: 0.6rem 0 1.2rem 0;
+        line-height: 1.6rem;
+      }
     }
 
   }
