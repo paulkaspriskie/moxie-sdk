@@ -46,9 +46,9 @@ const Contact = () => {
       {/* </ul> */}
       <div  className={'layout-page__content'}>
         <Form formRef={form} formSubmit={sendEmail}>
-          <FormItem labelName="Name"><input type="text" name="user_name" required /></FormItem>
-          <FormItem labelName="Email"><input type="text" name="user_email" required /></FormItem>
-          <FormItem labelName="Subject"><input type="text" required /></FormItem>
+          <FormItem labelName="Name"><input type="text" name="from_name" required /></FormItem>
+          <FormItem labelName="Email"><input type="text" name="from_email" required /></FormItem>
+          <FormItem labelName="Subject"><input type="text" name="subject" required /></FormItem>
           <FormItem labelName="Message"><textarea name="message" required /></FormItem>
           <button type="submit" value="Send">Submit</button>
         </Form>
