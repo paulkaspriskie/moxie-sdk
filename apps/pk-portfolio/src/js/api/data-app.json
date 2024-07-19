@@ -67,7 +67,7 @@
       {
         "name": "moxie-sdk",
         "icon": "css-icon",
-        "description": "A micro front-end architecture to rapidly develop and deploy react apps.",
+        "description": "A modular front-end architecture with an accompanying Software Development Kit (SDK) that rapidly develops and deploys React.js single page web applications (SPAs).",
         "links": [
           {
             "name": "github",
