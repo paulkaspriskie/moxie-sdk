@@ -18,10 +18,13 @@
       margin-right: 15px;
       border: 1px solid variables.$color-foreground-black;
       border-radius: 5px;
+      display: flex;
       max-height: 50px;
       flex-basis: 50px;
+      align-items: center;
+      justify-content: center;
       background-color: variables.$color-background-muted-white;
-      & > svg { width: 100%; }
+      & > svg { width: 40px; }
     }
 
     & > section {
