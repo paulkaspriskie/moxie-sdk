@@ -44,12 +44,12 @@ const Contact = () => {
       {/* <ul> */}
       {/*   {data.map((item, i) => <li key={i}>{item.title}</li>)} */}
       {/* </ul> */}
-      <div ref={form} onSubmit={sendEmail} className={'layout-page__content'}>
-        <Form>
-          <FormItem labelName="Name"><input type="text" required /></FormItem>
-          <FormItem labelName="Email"><input type="text" required /></FormItem>
+      <div  className={'layout-page__content'}>
+        <Form formRef={form} formSubmit={sendEmail}>
+          <FormItem labelName="Name"><input type="text" name="user_name" required /></FormItem>
+          <FormItem labelName="Email"><input type="text" name="user_email" required /></FormItem>
           <FormItem labelName="Subject"><input type="text" required /></FormItem>
-          <FormItem labelName="Message"><textarea required /></FormItem>
+          <FormItem labelName="Message"><textarea name="message" required /></FormItem>
           <button type="submit" value="Send">Submit</button>
         </Form>
       </div>

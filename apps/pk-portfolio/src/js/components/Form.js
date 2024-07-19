@@ -1,8 +1,8 @@
 
-const Form = ({children}) => {
+const Form = ({children, formRef, formSubmit}) => {
 
   return (
-    <form className="component-form__container">
+    <form ref={formRef} onSubmit={formSubmit} className="component-form__container">
       {children}
     </form>
   );
