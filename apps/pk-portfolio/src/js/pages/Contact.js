@@ -12,6 +12,7 @@ import appData from '../api/data-app.json';
 const Contact = () => {
 
   const [hasSent, setHasSent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.data);
@@ -27,10 +28,12 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setHasSent(true);
+    setIsLoading(true);
 
     emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, {
       publicKey: process.env.PUBLIC_KEY,
     }).then(() => {
+      setIsLoading(false);
       console.log('SUCCESS!');
     }, (error) => {
       console.log(`FAILED ${error.text}`);
@@ -48,13 +51,17 @@ const Contact = () => {
       {/*   {data.map((item, i) => <li key={i}>{item.title}</li>)} */}
       {/* </ul> */}
       <div  className={'layout-page__content'}>
-        { !hasSent ?<Form formRef={form} formSubmit={sendEmail}>
-          <FormItem labelName="Name"><input type="text" name="from_name" required /></FormItem>
-          <FormItem labelName="Email"><input type="text" name="from_email" required /></FormItem>
-          <FormItem labelName="Subject"><input type="text" name="subject" required /></FormItem>
-          <FormItem labelName="Message"><textarea name="message" required /></FormItem>
-          <button type="submit" value="Send">Submit</button>
-        </Form> : null  }
+        { isLoading ? <Loader /> : null }
+        { !hasSent ?
+            <Form formRef={form} formSubmit={sendEmail}>
+              <FormItem labelName="Name"><input type="text" name="from_name" required /></FormItem>
+              <FormItem labelName="Email"><input type="text" name="from_email" required /></FormItem>
+              <FormItem labelName="Subject"><input type="text" name="subject" required /></FormItem>
+              <FormItem labelName="Message"><textarea name="message" required /></FormItem>
+              <button type="submit" value="Send">Submit</button>
+            </Form>
+        : null }
+        { hasSent === true && isLoading === false ? <h2>Success!</h2> : null }
       </div>
     </div>
   );
