@@ -5,6 +5,7 @@ import { fetchData } from '../actions/actions.js';
 import Hero from '../components/Hero.js';
 import Form from '../components/Form.js';
 import FormItem from '../components/FormItem.js';
+import Loader from '../components/Loader.js';
 import appData from '../api/data-app.json';
 
 
