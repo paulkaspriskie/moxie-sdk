@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import emailjs from '@emailjs/browser';
 import { fetchData } from '../actions/actions.js';
@@ -10,9 +10,10 @@ import appData from '../api/data-app.json';
 
 const Contact = () => {
 
+  const [hasSent, setHasSent] = useState(false);
+  const form = useRef();
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state.data);
-  const form = useRef();
 
 
   useEffect(() => {
@@ -24,6 +25,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setHasSent(true);
 
     emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, {
       publicKey: process.env.PUBLIC_KEY,
@@ -45,13 +47,13 @@ const Contact = () => {
       {/*   {data.map((item, i) => <li key={i}>{item.title}</li>)} */}
       {/* </ul> */}
       <div  className={'layout-page__content'}>
-        <Form formRef={form} formSubmit={sendEmail}>
+        { !hasSent ?<Form formRef={form} formSubmit={sendEmail}>
           <FormItem labelName="Name"><input type="text" name="from_name" required /></FormItem>
           <FormItem labelName="Email"><input type="text" name="from_email" required /></FormItem>
           <FormItem labelName="Subject"><input type="text" name="subject" required /></FormItem>
           <FormItem labelName="Message"><textarea name="message" required /></FormItem>
           <button type="submit" value="Send">Submit</button>
-        </Form>
+        </Form> : null  }
       </div>
     </div>
   );
