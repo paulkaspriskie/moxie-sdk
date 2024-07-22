@@ -11,6 +11,19 @@
     justify-content: center;
     align-items: center;
     & > svg { fill: variables.$color-brand-primary; }
+    & > section {
+      margin-top: 6rem;
+      text-align: center;
+      & > h2 { margin-bottom: 0.5rem; }
+      & > svg {
+        width: 115px;
+        color: variables.$color-brand-primary;
+      }
+      & > p {
+        margin: 0;
+        font-size: 18px;
+      }
+    }
   }
 
   .component-form__container {

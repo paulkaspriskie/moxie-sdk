@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import emailjs from '@emailjs/browser';
 import { fetchData } from '../actions/actions.js';
 import Hero from '../components/Hero.js';
+import Icon from '../components/Icon.js';
 import Form from '../components/Form.js';
 import FormItem from '../components/FormItem.js';
 import Loader from '../components/Loader.js';
@@ -61,7 +62,13 @@ const Contact = () => {
               <button type="submit" value="Send">Submit</button>
             </Form>
         : null }
-        { hasSent === true && isLoading === false ? <h2>Success!</h2> : null }
+        { hasSent === true && isLoading === false ?
+          <section>
+            <Icon name="send-icon" />
+            <h2>Success!</h2>
+            <p>Your submission has been received.</p>
+          </section>
+        : null }
       </div>
     </div>
   );
