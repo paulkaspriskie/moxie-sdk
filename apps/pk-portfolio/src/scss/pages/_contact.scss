@@ -10,14 +10,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    & > svg { fill: variables.$color-brand-primary; }
+    & > svg {
+      margin-top: 6rem;
+      fill: variables.$color-brand-primary;
+    }
     & > section {
       margin-top: 6rem;
       text-align: center;
-      & > h2 { margin-bottom: 0.5rem; }
+      & > h2 { margin: 0.5rem 0; }
       & > svg {
         width: 115px;
-        color: variables.$color-brand-primary;
+        color: #2E7D32;
       }
       & > p {
         margin: 0;

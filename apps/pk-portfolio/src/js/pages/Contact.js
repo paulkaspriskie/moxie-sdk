@@ -64,7 +64,7 @@ const Contact = () => {
         : null }
         { hasSent === true && isLoading === false ?
           <section>
-            <Icon name="send-icon" />
+            <Icon name="success-icon" />
             <h2>Success!</h2>
             <p>Your submission has been received.</p>
           </section>
