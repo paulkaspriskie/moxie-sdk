@@ -10,7 +10,7 @@ const Experience = () => {
       <Hero>
         <h1>{appData.experience.title.charAt(0).toUpperCase() + appData.experience.title.slice(1)}</h1>
         <p>{appData.experience.description}</p>
-        <a href={resume} target="_blank">View Resume<Icon name={'file-download-icon'} /></a>
+        <a href={resume} target="_blank">View Resume<Icon name={'eye-icon'} /></a>
         <a href={resume} target="_blank" download="kaspriskie-resume">Download Resume<Icon name={'file-download-icon'} /></a>
       </Hero>
       <div className={'layout-page__content'}>
