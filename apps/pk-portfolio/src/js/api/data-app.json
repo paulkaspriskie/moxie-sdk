@@ -15,6 +15,18 @@
   "experience": {
     "title": "experience",
     "description": "This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.",
+    "documents": [
+      {
+        "title": "View Resume",
+        "fileName": "resume-kaspriskie.pdf",
+        "icon": "eye-icon.svg"
+      },
+      {
+        "title": "Donload Resume",
+        "fileName": "resume-kaspriskie.pdf",
+        "icon": "file-download-icon"
+      }
+    ],
     "content": [
       {
         "date": "September 2021 - Present",
