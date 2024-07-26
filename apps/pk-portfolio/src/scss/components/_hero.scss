@@ -17,7 +17,10 @@
       font-size: 32px;
     }
 
-    a {
+    & > div { display: flex; }
+
+    & > div > a {
+      margin-right: 1.6rem;
       display: flex;
       color: variables.$color-foreground-white;
       & > svg {
