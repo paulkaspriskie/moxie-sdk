@@ -24,7 +24,10 @@
       align-items: center;
       justify-content: center;
       background-color: variables.$color-background-muted-white;
-      & > svg { width: 40px; }
+      & > svg {
+        width: 40px;
+        height: auto;
+      }
     }
 
     & > section {
