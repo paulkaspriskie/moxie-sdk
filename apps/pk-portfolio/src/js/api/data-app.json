@@ -70,7 +70,7 @@
     "content": [
       {
         "name": "bevy",
-        "icon": "javascript-icon",
+        "icon": "terminal-icon",
         "description": "A shell based bulk installer and manager for vim and shell plugins.",
         "links": [
           {
@@ -81,7 +81,7 @@
       },
       {
         "name": "moxie-sdk",
-        "icon": "css-icon",
+        "icon": "code-icon",
         "description": "A modular front-end architecture with an accompanying Software Development Kit (SDK) that rapidly develops and deploys React.js single page web applications (SPAs).",
         "links": [
           {
