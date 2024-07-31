@@ -1,6 +1,6 @@
 # Moxie-SDK
 
-A micro front-end architecture to rapidly develop and deploy react apps.
+A front-end architecture/Software Development Kit (SDK) that rapidly develops and deploys React.js single page applications (SPAs).
 
 ## Contents
 - [Installation](#installation)
