@@ -42,7 +42,7 @@ const Skills = () => {
                   <div><Icon name={item.iconName} /></div>
                   <div>
                     <h3>{capitalizeFirst(item.title)}</h3>
-                    <p>This is a brief brief description of the project and what it does.</p>
+                    <p>{item.description}</p>
                   </div>
                 </Card>
               )}
