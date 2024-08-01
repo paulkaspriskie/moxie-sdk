@@ -102,12 +102,12 @@
           {
             "title": "html",
             "iconName": "html-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Proficient use of html elements and corresponding attributes to build semantic and accessible markup."
           },
           {
             "title": "css",
             "iconName": "css-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Adept knowledge of CSS syntax, selectors, properties, values, layouts (flex & grid) and responsive design via media queries."
           },
           {
             "title": "javascript",
