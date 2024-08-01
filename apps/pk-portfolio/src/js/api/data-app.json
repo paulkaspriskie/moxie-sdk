@@ -112,7 +112,7 @@
           {
             "title": "javascript",
             "iconName": "javascript-icon",
-            "description": "Proven expertise in JS syntax, event handling, data structures, asynchronous and object-oriented programming, as well as JavaScript frameworks and libraries."
+            "description": "Advanced skill-set in JS syntax, event handling, data structures, asynchronous and object-oriented programming, as well as JavaScript frameworks and libraries."
           }
         ]
       },
@@ -122,22 +122,22 @@
           {
             "title": "ecma script",
             "iconName": "es6-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Fluent in modern ECMA syntax and principles such as classes, ES6 modules, arrow functions, template literals and Async/Await programming."
           },
           {
             "title": "nodejs",
             "iconName": "nodejs-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Experienced nodeJS module architect with a strong understanding of underlying frameworks, middleware, APIs and libraries."
           },
           {
             "title": "reactjs",
             "iconName": "reactjs-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Exemplary understanding of React usage and concepts such as state management, class & functional components, props/inheritance, virtual DOM, React Router and server-side rendering."
           },
           {
             "title": "redux",
             "iconName": "redux-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Proven understanding of core redux concepts such as state management, actions/reducers, dispatch/subscribe and providers."
           }
         ]
       },
@@ -147,12 +147,12 @@
           {
             "title": "postcss",
             "iconName": "postcss-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Utilization of core PostCSS libraries and plugins such as autoprefixer, pseudo-elements, media-queries and minification to reduce dev time and improve cross browser compatibility."
           },
           {
             "title": "sass",
             "iconName": "sass-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Expert knowledge of Sass library such as variables/mixins, nested rules, selector inheritance, partials and control structures."
           }
         ]
       },
