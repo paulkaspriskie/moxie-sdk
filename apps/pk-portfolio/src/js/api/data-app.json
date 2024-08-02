@@ -162,17 +162,17 @@
           {
             "title": "babel",
             "iconName": "babel-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Leverage Babel to transpile ECMA into browser readable JS, experienced with using polyfills and shims to ensure browser compatibility."
           },
           {
             "title": "npm",
             "iconName": "npm-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Expertise in using NPM for package management, dependency locking, scripts/executables and publishing packages."
           },
           {
             "title": "webpack",
             "iconName": "webpack-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Proficiencies using Webpack and corresponding loaders/plugins for module bundling, dev/prod/output configurations, code splitting and tree shaking."
           }
         ]
       },
