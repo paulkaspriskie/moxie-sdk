@@ -182,17 +182,17 @@
           {
             "title": "bash",
             "iconName": "bash-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "In-depth knowledge of unix commands, file management, navigation, aliases, shell scripting, automation and error handling."
           },
           {
             "title": "zsh",
             "iconName": "zsh-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Vast knowledge of Zsh syntax, auto-completion, expansions, interactive shell, shell scripting, environment management, modules and plugins."
           },
           {
             "title": "vim",
             "iconName": "vim-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Fluent in Vim modes, commands and keybindings to optimize workflows as well as custom configurations for specific dev environments."
           }
         ]
       },
