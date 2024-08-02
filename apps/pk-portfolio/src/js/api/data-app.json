@@ -152,7 +152,7 @@
           {
             "title": "sass",
             "iconName": "sass-icon",
-            "description": "Expert knowledge of Sass library such as variables/mixins, nested rules, selector inheritance, partials and control structures."
+            "description": "Expert knowledge of Sass concepts and practices such as variables/mixins, nested rules, selector inheritance, partials and control structures."
           }
         ]
       },
@@ -202,17 +202,17 @@
           {
             "title": "figma",
             "iconName": "figma-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Well-versed in Figma basics, Dev Mode for design specification reference and design token implementations."
           },
           {
             "title": "illustrator",
             "iconName": "illustrator-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Experienced using Illustrator to create, adjust and export optimized assets for web/mobile applications."
           },
           {
             "title": "photoshop",
             "iconName": "photoshop-icon",
-            "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+            "description": "Routinely uses Photoshop to edit, adjust and optimize photos for web/mobile applications."
           }
         ]
       }
