@@ -14,8 +14,8 @@
       }
 
       & > section .component-card__container {
-          margin: 1rem 0 1rem 0;
-          flex-basis: 48%;
+          margin: 0.9rem 0;
+          flex-basis: 48.5%;
 
           @media (width <= 960px) { flex-basis: 100%; }
       }

@@ -27,10 +27,11 @@
   }
 
   & > div:last-of-type {
-    padding: 1.5rem;
+    padding: 1.2rem;
     line-height: 1.4rem;
 
-    h3 { margin-top: 0; }
+    h3 { margin: 0; }
+    p { margin-top: 0.4rem; }
   }
 
 }
