@@ -26,9 +26,16 @@
         display: flex;
 
         & > div {
+          display: flex;
           width: 48px;
           border: 1.5px solid variables.$color-border-default;
           border-radius: 5px;
+          justify-content: center;
+
+          & > svg {
+            width: 60%;
+            height: auto;
+          }
         }
 
         & > section >  span {
