@@ -66,7 +66,7 @@
   ],
   "projects": {
     "title": "projects",
-    "description": "This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.",
+    "description": "A collection of my open-source projects. Feel free to explore, contribute, fork or use them in your own projects.",
     "content": [
       {
         "name": "bevy",
