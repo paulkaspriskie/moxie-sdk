@@ -33,14 +33,14 @@
         "role": "UI Developer",
         "company": "Barclays",
         "location": "Wilmington, Delaware",
-        "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+        "description": "Key contributor of global design system, responsible for the development and creation of new USA centric design system components and corresponding frontend architecture(s). Co-authored contribution and governance model as well as oversaw component migration of legacy applications and required necessary upgrades."
       },
       {
         "date": "October 2015 - August 2021",
         "role": "Web Developer",
         "company": "Temple University",
         "location": "Philadelphia, Pennsylvania",
-        "description": "Cheesy grin bocconcini babybel. Cheddar pepper jack camembert de normandie swiss croque monsieur monterey jack blue"
+        "description": "Member of core development team that developed, maintained and extended frontend modules/architectures to support internal design system as well as a lead architect of a fully decoupled Drupal site with ReactJS front-end."
       }
     ]
   },
