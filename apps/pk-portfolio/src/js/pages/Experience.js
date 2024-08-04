@@ -23,7 +23,7 @@ const Experience = () => {
               <time>{item.date}</time>
               <h3>{item.role}</h3>
               <div>
-                <div><Icon name="barclays-icon" /></div>
+                <div><Icon name={item.logo} /></div>
                 <section>
                   <span>{item.company}</span>
                   <span>{item.location}</span>
