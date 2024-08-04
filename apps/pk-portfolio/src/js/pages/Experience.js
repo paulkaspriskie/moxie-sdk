@@ -22,8 +22,13 @@ const Experience = () => {
               <div></div>
               <time>{item.date}</time>
               <h3>{item.role}</h3>
-              <span>{item.company}</span>
-              <span>{item.location}</span>
+              <div>
+                <div></div>
+                <section>
+                  <span>{item.company}</span>
+                  <span>{item.location}</span>
+                </section>
+              </div>
               <p>{item.description}</p>
             </li>
           )}
