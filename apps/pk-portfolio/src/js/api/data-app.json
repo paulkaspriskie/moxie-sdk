@@ -33,6 +33,7 @@
         "role": "UI Developer",
         "company": "Barclays",
         "location": "Wilmington, Delaware",
+        "logo": "barlays-icon",
         "description": "Key contributor of global design system, responsible for the development and creation of new USA centric design system components and corresponding frontend architecture(s). Co-authored contribution and governance model as well as oversaw component migration of legacy applications and required necessary upgrades."
       },
       {
@@ -40,6 +41,7 @@
         "role": "Web Developer",
         "company": "Temple University",
         "location": "Philadelphia, Pennsylvania",
+        "logo": "temple-icon",
         "description": "Member of core development team that developed, maintained and extended frontend modules/architectures to support internal design system as well as a lead architect of a fully decoupled Drupal site with ReactJS front-end."
       }
     ]
@@ -117,7 +119,7 @@
         ]
       },
       {
-        "category" : "javascript",
+        "category": "javascript",
         "data": [
           {
             "title": "ecma script",
@@ -142,7 +144,7 @@
         ]
       },
       {
-        "category" : "css",
+        "category": "css",
         "data": [
           {
             "title": "postcss",
