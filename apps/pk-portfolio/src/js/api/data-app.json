@@ -94,7 +94,7 @@
   },
   "skills": {
     "title": "skills",
-    "description": "This some paragraph text, not much to see here. Words are cool and I say them sometimes. Some more words for good measures.",
+    "description": "A brief overview of my technical competencies and skills used to build modern UI experiences/front-end architectures.",
     "content": [
       {
         "category" : "core skills",
