@@ -19,7 +19,7 @@ const Experience = () => {
         <VerticleTimeline>
           {appData.experience.content.map((item, i) =>
             <li key={i}>
-              <div></div>
+              <div><Icon name="work-icon" /></div>
               <time>{item.date}</time>
               <h3>{item.role}</h3>
               <div>
