@@ -9,14 +9,19 @@
     & > li {
       position: relative;
       padding: 1.5rem 1.5rem 1.5rem 2rem;
-      &  > h3 { margin: 0.5rem 0 0 0; }
+
+      & > time {
+        display: block;
+        margin-top: 7.5px;
+      }
+
+      & > h3 { margin: 0.5rem 0 0 0; }
 
       & > div:first-of-type {
         position: absolute;
         inset-inline-start: -17.2px;
         border: 2px solid variables.$color-brand-primary;
         border-radius: 50%;
-        margin-top: -7.5px;
         display: flex;
         width: 30px;
         height: 30px;
