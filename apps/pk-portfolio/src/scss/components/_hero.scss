@@ -11,6 +11,7 @@
     margin: 0 4rem;
     width: 75%;
     color: variables.$color-foreground-white;
+    @media (width <= variables.$breakpoint-small) { margin: 0 2.5rem; }
 
     h1 {
       margin-top: 0;
@@ -19,7 +20,10 @@
 
     & > p { line-height: 1.5rem; }
 
-    & > div { display: flex; }
+    & > div {
+      display: flex;
+      @media (width <= variables.$breakpoint-small) { display: none; }
+    }
 
     & > div > a {
       margin-right: 1.6rem;
