@@ -6,7 +6,11 @@
   overflow: scroll;
 
   @media (width <= variables.$breakpoint-medium) { width: calc(100% - 100px); }
-  @media (width <= variables.$breakpoint-small) {  width: 100%; }
+
+  @media (width <= variables.$breakpoint-small) {
+    position: static;
+    width: 100%;
+  }
 
   .layout-page__content {
     padding: 2rem 4rem;
