@@ -12,3 +12,11 @@ body {
  a {
   color: variables.$color-foreground-black;
 }
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
