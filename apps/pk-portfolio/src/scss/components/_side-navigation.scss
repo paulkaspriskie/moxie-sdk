@@ -12,11 +12,13 @@
 
     & > button {
       margin: 0.2rem;
+      padding: 0;
       display: none;
       visibility: hidden;
       position: absolute;
+      box-sizing: content-box;
       border: none;
-      width: 40px;
+      width: 36px;
       align-self: flex-end;
       background-color: transparent;
       cursor: pointer;
@@ -197,13 +199,15 @@
 .app-pk-portfolio__container > button {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 7px;
   z-index: 10;
   display: none;
   visibility: hidden;
+  box-sizing: content-box;
   margin-top: 0.5rem;
+  padding: 0;
   border: none;
-  width: 40px;
+  width: 35px;
   background-color: transparent;
   color: variables.$color-foreground-white;
   cursor: pointer;
