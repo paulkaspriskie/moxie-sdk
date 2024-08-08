@@ -16,7 +16,10 @@
     h1 {
       margin-top: 0;
       font-size: 32px;
-      @media (width <= variables.$breakpoint-small) { margin: 1.2rem 0 0 0; }
+      @media (width <= variables.$breakpoint-small) {
+        margin: 1.2rem 0 0 0;
+        font-size: 22px;
+      }
     }
 
     & > p {
