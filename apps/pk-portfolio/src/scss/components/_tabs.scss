@@ -45,11 +45,19 @@
       scroll-behavior: smooth;
 
       & > button {
-        display: block;
+        padding: 0;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         visibility: visible;
+        border-radius: none;
 
-        &.prev { inset-inline-start: 30px; }
-        &.next { inset-inline-end: 30px; }
+        &.prev { inset-inline-start: 15px; }
+        &.next { inset-inline-end: 15px; }
+
+        & > svg { width: 90%; }
       }
     }
 
