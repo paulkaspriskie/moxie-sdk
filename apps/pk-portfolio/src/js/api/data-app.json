@@ -1,7 +1,7 @@
 {
   "bio": {
     "title": "Hello there, I'm Paul Kaspriskie.",
-    "description": "An accomplished Philadelphia based Frontend / UI Developer with over eight years of experience. Proficiencies in developing, maintaining and extending UI components to support underlying design systems / web applications.",
+    "description": "An accomplished Philadelphia based Frontend / UI Developer with over nine years of experience. Proficiencies in developing, maintaining and extending UI components to support underlying design systems / web applications.",
     "image": "pk-profile.png"
   },
   "contact": {
@@ -34,7 +34,7 @@
         "company": "Barclays",
         "location": "Wilmington, Delaware",
         "logo": "barclays-icon",
-        "description": "Key contributor of global design system, responsible for the development and creation of new USA centric design system components and corresponding frontend architecture(s). Co-authored contribution and governance model as well as oversaw component migration of legacy applications and required necessary upgrades."
+        "description": "Key contributor of global design system, responsible for the development and creation of new US centric design system components and corresponding frontend architecture(s). Co-authored contribution and governance model as well as oversaw component migration of legacy applications and required necessary upgrades."
       },
       {
         "date": "October 2015 - August 2021",
