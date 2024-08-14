@@ -1,6 +1,6 @@
 import Hero from '../components/Hero.js';
 import Icon from '../components/Icon.js';
-import VerticleTimeline from '../components/VerticleTimeline.js';
+import VerticalTimeline from '../components/VerticalTimeline.js';
 import appData from '../api/data-app.json';
 import resume from '../../assets/docs/resume-kaspriskie.pdf';
 
@@ -16,7 +16,7 @@ const Experience = () => {
         </div>
       </Hero>
       <div className={'layout-page__content'}>
-        <VerticleTimeline>
+        <VerticalTimeline>
           {appData.experience.content.map((item, i) =>
             <li key={i}>
               <div><Icon name="work-icon" /></div>
@@ -32,7 +32,7 @@ const Experience = () => {
               <p>{item.description}</p>
             </li>
           )}
-        </VerticleTimeline>
+        </VerticalTimeline>
       </div>
     </div>
   )
