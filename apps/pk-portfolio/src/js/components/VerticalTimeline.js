@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const VerticleTimeline = (props) => {
+const VerticalTimeline = (props) => {
   return (
     <div className="component-vertical-timeline__container">
       <ul>
@@ -11,4 +11,4 @@ const VerticleTimeline = (props) => {
   );
 }
 
-export default VerticleTimeline;
+export default VerticalTimeline;
