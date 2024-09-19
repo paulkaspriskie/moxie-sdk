@@ -29,35 +29,14 @@ npm install
 <br/>
 
 ## Basic Usage
-### Compile development build and run dev server
-> Uses webpack.dev.js to build development configuration and to start dev server. <br/><br/> **NOTE!:** If no app name is specified the first application within ```apps/``` will be compiled as default.
-```shell
-npm start [app-name]
-```
+### NPM Scripts
+| Command | Description |
+| :------ | :---------- |
+| `npm start <app-name>` | Uses webpack.dev.js to build development configuration and to start dev server. **NOTE!:** If no app name is specified the first application within ```apps/``` will be compiled as default. |
+| `npm run build <app-name>` | Uses webpack.prod.js to build production configuration. **NOTE!:** If no app name is specified the first application within ```apps/``` will be compiled as default. |
+| `npm run create-app <app name>` | Dynamically generates directory and necessary entry point files within ```apps/```. |
+| `npm run create-component <component name>` | Dynamically generates react component architecture and corresponding scss file in specified app. A prompt will ask for valid app name when process initially runs. |
 
-<br/>
-
-### Compile production build
-> Uses webpack.prod.js to build production configuration. <br/><br/> **NOTE!:** If no app name is specified the first application within ```apps/``` will be compiled as default.
-```shell
-npm run build [app-name]
-```
-
-<br/>
-
-### Create new application
-> Dynamically generates directory and necessary entry point files within ```apps/```.
-```shell
-npm run create-app [app-name]
-```
-
-<br/>
-
-### Create new component
-> Dynamically generates react component architecture and corresponding scss file in specified app. A prompt will ask for valid app name when process initially runs.
-```shell
-npm run create-component [component-name]
-```
 
 <br/>
 
